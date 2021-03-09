@@ -26,3 +26,37 @@
 #dig-prod:hover {
     transform: scale(1.02);
 }
+
+#headphones:hover {
+    transform: scale(1.05);
+}
+
+#extra-prod {
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+    min-height: 200px;
+    grid-template-columns: repeat(5, minmax(15%, 1fr));
+    grid-template-areas: "so1 so2 so3 so4 so5";
+    margin-bottom: 20px;
+}
+
+#sock {
+    grid-area: so1;
+}
+
+#pers {
+    grid-area: so2;
+}
+
+#brac {
+    grid-area: so3;
+}
+
+#groc {
+    grid-area: so4;
+}
+
+#heal {
+    grid-area: so5;
+}
