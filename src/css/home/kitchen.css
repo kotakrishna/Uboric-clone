@@ -20,20 +20,24 @@
 
 #kit-tools {
     grid-area: kt;
+    transition-timing-function: ease;
 }
 
 #air-tight {
     grid-area: at;
+    transition-timing-function: ease;
 }
 
 #gas-lit {
     grid-area: gl;
+    transition-timing-function: ease;
 }
 
 #kit-tools:hover,
 #air-tight:hover,
 #gas-lit:hover {
     transform: scale(1.02);
+    transition-timing-function: ease;
 }
 
 #spices {
