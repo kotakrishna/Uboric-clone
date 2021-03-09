@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#the{
+	margin: 0;
+	padding: 0;
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #e5e5e5;
+}
+
+.middle {
+	position: relative;
+	width: 30%;
+	max-width: 300px;
+}
+
+.slider {
+	position: relative;
+	z-index: 1;
+	height: 5px;
+	margin: 0 15px;
+}
+.slider > .track {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+	background-color: #7f7f80;
+}
+.slider > .range {
+	position: absolute;
+	z-index: 2;
+	left: 25%;
+	right: 25%;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px; 
+	background-color: #858585;
+}
+.slider > .thumb {
+	position: absolute;
+	z-index: 3;
+	width: 10px;
+	height: 10px;
+	background-color: #ee3800;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0 rgba(71, 71, 71, 0.1);
+	transition: box-shadow .3s ease-in-out;
+}
+.slider > .thumb.left {
+	left: 25%;
+	transform: translate(-5px, -3px);
+}
+.slider > .thumb.right {
+	right: 25%;
+	transform: translate(5px, -3px);
+}
+.slider > .thumb.hover {
+	box-shadow: 0 0 0 20px rgba(83, 83, 83, 0.1);
+}
+.slider > .thumb.active {
+	box-shadow: 0 0 0 40px rgba(53, 53, 53, 0.2);
+}
+
+input[type=range] {
+	position: absolute;
+	pointer-events: none;
+	-webkit-appearance: none;
+	z-index: 2;
+	height: 10px;
+	width: 100%;
+	opacity: 0;
+}
+input[type=range]::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 30px;
+	height: 30px;
+	border-radius: 0;
+	border: 0 none;
+	background-color: red;
+	-webkit-appearance: none;
+}
+
+
+.youtube-link {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	color: #000;
+	text-decoration: none;
+	font-size: 12px;
+}
+    </style>
+</head>
+<body>
+    <h1>
+        the table for search
+    </h1>
+    <input type="text" name="" id="search" onkeyup="call()">
+    <input type="range" min="100" value="1" max="1000" name="" id="price" onchange="go()"> 
+    <h2 id="output"></h2>
+    <table id="mytable">
+        <!-- <tbody id="mytable"> -->
+            <tr>
+                <td><img src="https://via.placeholder.com/108x100" alt=""></td>
+                <td>great</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/108x100" alt=""></td>
+                <td>wonderful</td>
+                <td>550</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/108x100" alt=""></td>
+                <td>nice</td>
+                <td>650</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/108x100" alt=""></td>
+                <td>okay</td>
+                <td>350</td>
+            </tr>
+            <tr>
+                <td><img src="https://via.placeholder.com/108x100" alt=""></td>
+                <td>not good</td>
+                <td>150</td>
+            </tr>
+        <!-- </tbody> -->
+    </table>
+
+    <div id="the">
+    <div class="middle">
+        <div class="multi-range-slider">
+            <input type="range" id="input-left" min="100" max="1000" value="25">
+            <input type="range" id="input-right" min="100" max="1000" value="1000">
+    
+            <div class="slider">
+                <div class="track"></div>
+                <div class="range"></div>
+                <div class="thumb left"></div>
+                <div class="thumb right"></div>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="searchFunction.js" ></script>
+</body>
+</html>
+
+ fda 
+  a <datagrid>ad a  d</datagrid>
