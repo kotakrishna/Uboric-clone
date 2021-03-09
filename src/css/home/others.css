@@ -11,24 +11,29 @@
 
 #anti-punc {
     grid-area: anp;
+    transition-timing-function: ease-in-out;
 }
 
 #bath-acc {
     grid-area: bat;
+    transition-timing-function: ease-in-out;
 }
 
 #dig-prod {
     grid-area: dig;
+    transition-timing-function: ease-in-out;
 }
 
 #anti-punc:hover,
 #bath-acc:hover,
 #dig-prod:hover {
     transform: scale(1.02);
+    transition-timing-function: ease-in;
 }
 
 #headphones:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
+    transition-timing-function: ease-in;
 }
 
 #extra-prod {
