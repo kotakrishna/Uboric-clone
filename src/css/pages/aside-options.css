@@ -1,0 +1,24 @@
+.search-box input {
+  font-size: 20px;
+  padding: 20px;
+  width: 85%;
+  border-radius: 2px;
+  cursor: auto;
+}
+
+.brands-cont button {
+  font-size: 20px;
+}
+
+button,
+input {
+  background: none;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid gray;
+}
+
+.brands,
+#brand-name {
+  display: none;
+}
