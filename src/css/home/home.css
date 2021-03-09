@@ -1,0 +1,119 @@
+@import "./src/css/reset.css";
+* {
+    box-sizing: border-box;
+}
+
+.disp-grid {
+    display: grid;
+}
+
+#home-top {
+    margin-top: 100px;
+    gap: 0px;
+    width: 100%;
+    height: 375px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "lo mo ro";
+}
+
+#home-top>#left-one {
+    grid-area: lo;
+    background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Left.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#home-top>#mid-one {
+    background-color: aliceblue;
+    grid-area: mo;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#home-top>#mid-one>img {
+    width: 250px;
+    height: 250px;
+}
+
+#right-one {
+    grid-area: ro;
+    background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Right.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#home-top button {
+    border: none;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    font-weight: 600;
+}
+
+#left-one>button {
+    position: relative;
+    top: 70%;
+    left: 55%;
+}
+
+#right-one>button {
+    position: relative;
+    top: 70%;
+    left: 7%;
+}
+
+#footwear-logo {
+    width: 100%;
+    height: 100px;
+    padding-top: 30px;
+    background-color: rgb(238, 240, 241);
+    padding-left: 35%;
+}
+
+#footwear-logo>img {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#footwear-logo>span {
+    color: rgb(104, 16, 16);
+    font-size: 27px;
+    font-weight: 700;
+}
+
+#home-foot {
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 375px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "mf wf kf";
+}
+
+#men-foot {
+    grid-area: mf;
+    background-image: url("https://www.uboric.com/wp-content/uploads/2020/08/Mens-2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#women-foot {
+    grid-area: wf;
+    background-image: url("https://www.uboric.com/wp-content/uploads/2020/08/Womens-2.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#kid-foot {
+    grid-area: kf;
+    background-image: url("https://www.uboric.com/wp-content/uploads/2020/08/Kids-1.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#men-foot:hover,
+#women-foot:hover,
+#kid-foot:hover {
+    transform: scale(1.02);
+}

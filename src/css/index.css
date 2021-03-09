@@ -1,2 +1,3 @@
 @import "./reset.css";
-@import "./pages/home/home.css";
+
+@import "./home/home.css";
