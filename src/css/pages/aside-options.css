@@ -1,13 +1,27 @@
-.search-box input {
+.options {
+  flex-basis: 30%;
+  padding: 25px;
+}
+
+.search-box input,
+.brands-cont button {
   font-size: 20px;
   padding: 20px;
-  width: 85%;
+  width: 95%;
   border-radius: 2px;
   cursor: auto;
 }
 
+/* .search-box input:target {
+  color: red;
+} */
+
 .brands-cont button {
   font-size: 20px;
+  padding: 0 10px;
+  margin: 20px 0;
+  text-align: left;
+  color: var(--old-price-color);
 }
 
 button,
@@ -21,4 +35,39 @@ input {
 .brands,
 #brand-name {
   display: none;
+}
+
+.product-color h2 {
+  color: black;
+  margin: 0;
+}
+
+.product-color > div {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  color: rgb(80, 79, 79);
+}
+
+.product-color > div:first-child {
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+  border-radius: none;
+  margin-right: 20px;
+}
+
+#show-more {
+  text-align: center;
+  font-size: 18px;
+  color: rgb(80, 79, 79);
+}
+
+hr {
+  width: 95%;
+  margin: 10px 0;
 }
