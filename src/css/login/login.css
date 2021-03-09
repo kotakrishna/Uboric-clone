@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+#cont {
+    margin-left: 20px;
+    margin-top: 150px;
+}
+
+#cont>#headng {
+    margin: auto;
+    color: rgb(4, 4, 116);
+    text-align: center;
+    font-size: 16px;
+}
+
+#headng>h3 {
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#log-data {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(2, minmax(45%, 1fr));
+    grid-template: "lo re";
+    width: 60%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#login {
+    grid-area: lo;
+    padding: 20px;
+    width: 100%;
+    max-height: 400px;
+    box-shadow: 0 4px 8px 0 rgba(43, 49, 66, 0.2), 0 6px 20px 0 rgba(22, 21, 32, 0.596);
+}
+
+#register {
+    grid-area: re;
+    width: 100%;
+    padding: 20px;
+    min-height: 200px;
+    box-shadow: 0 4px 8px 0 rgba(43, 49, 66, 0.2), 0 6px 20px 0 rgba(22, 21, 32, 0.596);
+}
+
+#login>span,
+#register>span {
+    font-size: x-large;
+    margin-left: 40%;
+    color: darkblue;
+    font-weight: 600;
+}
+
+label,
+a {
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+input,
+button {
+    width: 200px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 700px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(238, 237, 237);
+    color: black;
+}
+
+#login form>#rem {
+    width: 30px;
+    height: 20px;
+}
+
+#login form>a {
+    text-decoration: none;
+}
+
+button {
+    color: rgb(240, 239, 239);
+    background: rgba(235, 117, 38, 0.767);
+    font-weight: 800;
+    width: 170px;
+    margin-left: 30px;
+}
+
+form>span {
+    font-weight: 500;
+    line-height: 1.2;
+}
