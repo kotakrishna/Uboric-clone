@@ -76,49 +76,53 @@
     left: 7%;
 }
 
-#footwear-logo {
+.logo {
     width: 100%;
     height: 100px;
     padding-top: 30px;
-    background-color: rgb(238, 240, 241);
-    padding-left: 35%;
+    /* background-color: rgb(238, 240, 241); */
+    padding-left: 33%;
+    /* box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596); */
+    margin-bottom: 20px;
 }
 
-#footwear-logo>img {
+.logo>img {
     margin-left: 40px;
     margin-right: 40px;
 }
 
-#footwear-logo>span {
-    color: rgb(104, 16, 16);
+.logo>span {
+    color: rgb(11, 18, 116);
     font-size: 27px;
     font-weight: 700;
 }
 
 #home-foot {
     margin-top: 10px;
+    margin-bottom: 20px;
     gap: 10px;
     width: 100%;
     height: 375px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: "mf wf kf";
+    box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596);
 }
 
-#men-foot {
+#mf {
     grid-area: mf;
 }
 
-#women-foot {
+#wf {
     grid-area: wf;
 }
 
-#kid-foot {
+#kf {
     grid-area: kf;
 }
 
-#men-foot:hover,
-#women-foot:hover,
-#kid-foot:hover {
+#mf:hover,
+#wf:hover,
+#kf:hover {
     transform: scale(1.02);
 }
 
@@ -131,9 +135,10 @@
     margin-top: 10px;
     gap: 10px;
     width: 100%;
-    height: 200px;
+    min-height: 200px;
     grid-template-columns: repeat(5, minmax(15%, 1fr));
     grid-template-areas: "ss cp cs sn lof";
+    margin-bottom: 20px;
 }
 
 #spSho {
@@ -156,12 +161,12 @@
     grid-area: lof;
 }
 
-#shoes>div>.foot-size {
+.sizes {
     width: 275px;
     height: 390px;
-    box-shadow: 0 4px 8px 0 rgba(10, 5, 5, 0.2), 0 6px 20px 0 rgba(88, 28, 28, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596);
 }
 
-#shoes>div>.foot-size:hover {
+.sizes:hover {
     transform: scale(1.02);
 }
