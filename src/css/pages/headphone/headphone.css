@@ -39,3 +39,12 @@ h2 {
   margin: auto;
   color: var(--primary-color);
 }
+
+.links a {
+  cursor: pointer;
+}
+
+.item-img {
+  width: 130px;
+  margin: auto;
+}

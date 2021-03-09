@@ -11,11 +11,6 @@ h2 {
   margin: 10px;
 }
 
-.options {
-  flex-basis: 30%;
-  border: 1px solid red;
-}
-
 .products-cont {
   flex-grow: 1;
   grid-template-columns: repeat(4, 1fr);
@@ -26,11 +21,13 @@ h2 {
 
 .product {
   box-shadow: var(--shadow);
-
+  position: relative;
   font-size: var(--a-font-size);
   padding: 30px 0;
   text-align: center;
   border-radius: var(--round-radius);
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .gallery {
@@ -47,6 +44,7 @@ h2 {
 .price {
   margin-top: 10px;
   position: relative;
+  bottom: 0;
 }
 
 .old-price {
