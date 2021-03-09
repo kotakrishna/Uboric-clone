@@ -1,172 +1,177 @@
 @import "./src/css/reset.css";
+@import "./kitchen.css";
+@import "./others.css";
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 #cont {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .disp-grid {
-    display: grid;
+  display: grid;
 }
 
 #home-top {
-    margin-top: 100px;
-    gap: 0px;
-    width: 100%;
-    height: 375px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "lo mo ro";
+  margin-top: 100px;
+  gap: 0px;
+  width: 100%;
+  height: 375px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "lo mo ro";
 }
 
-#home-top>#left-one {
-    grid-area: lo;
-    background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Left.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+#home-top > #left-one {
+  grid-area: lo;
+  background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Left.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-#home-top>#mid-one {
-    background-color: aliceblue;
-    grid-area: mo;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
+#home-top > #mid-one {
+  background-color: aliceblue;
+  grid-area: mo;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
 }
 
-#home-top>#mid-one>img {
-    width: 250px;
-    height: 250px;
+#home-top > #mid-one > img {
+  width: 250px;
+  height: 250px;
 }
 
 #right-one {
-    grid-area: ro;
-    background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Right.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
+  grid-area: ro;
+  background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Right.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #home-top button {
-    border: none;
-    border-radius: 10px;
-    width: 200px;
-    height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: brown;
-    background-color: rgb(219, 212, 201);
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  font-weight: 600;
+  font-size: 16px;
+  color: brown;
+  background-color: rgb(219, 212, 201);
 }
 
 #home-top button:hover {
-    transform: scale(1.02);
-    color: antiquewhite;
-    background-color: brown;
+  transform: scale(1.02);
+  color: antiquewhite;
+  background-color: brown;
 }
 
-#left-one>button {
-    position: relative;
-    top: 70%;
-    left: 55%;
+#left-one > button {
+  position: relative;
+  top: 70%;
+  left: 55%;
 }
 
-#right-one>button {
-    position: relative;
-    top: 70%;
-    left: 7%;
+#right-one > button {
+  position: relative;
+  top: 70%;
+  left: 7%;
 }
 
 .logo {
-    width: 100%;
-    height: 100px;
-    padding-top: 30px;
-    /* background-color: rgb(238, 240, 241); */
-    padding-left: 33%;
-    /* box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596); */
-    margin-bottom: 20px;
+  width: 100%;
+  height: 100px;
+  padding-top: 30px;
+  /* background-color: rgb(238, 240, 241); */
+  padding-left: 33%;
+  /* box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596); */
+  margin-bottom: 20px;
 }
 
-.logo>img {
-    margin-left: 40px;
-    margin-right: 40px;
+.logo > img {
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
-.logo>span {
-    color: rgb(11, 18, 116);
-    font-size: 27px;
-    font-weight: 700;
+.logo > span {
+  color: rgb(11, 18, 116);
+  font-size: 27px;
+  font-weight: 700;
 }
 
 #home-foot {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    gap: 10px;
-    width: 100%;
-    height: 375px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "mf wf kf";
-    box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  gap: 10px;
+  width: 100%;
+  height: 375px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "mf wf kf";
+  box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2),
+    0 6px 20px 0 rgba(22, 13, 107, 0.596);
 }
 
 #mf {
-    grid-area: mf;
+  grid-area: mf;
 }
 
 #wf {
-    grid-area: wf;
+  grid-area: wf;
 }
 
 #kf {
-    grid-area: kf;
+  grid-area: kf;
 }
 
 #mf:hover,
 #wf:hover,
 #kf:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .foot {
-    width: 475px;
-    height: 375px;
+  width: 475px;
+  height: 375px;
 }
 
 #shoes {
-    margin-top: 10px;
-    gap: 10px;
-    width: 100%;
-    min-height: 200px;
-    grid-template-columns: repeat(5, minmax(15%, 1fr));
-    grid-template-areas: "ss cp cs sn lof";
-    margin-bottom: 20px;
+  margin-top: 10px;
+  gap: 10px;
+  width: 100%;
+  min-height: 200px;
+  grid-template-columns: repeat(5, minmax(15%, 1fr));
+  grid-template-areas: "ss cp cs sn lof";
+  margin-bottom: 20px;
 }
 
 #spSho {
-    grid-area: ss;
+  grid-area: ss;
 }
 
 #chaps {
-    grid-area: cp;
+  grid-area: cp;
 }
 
 #casSho {
-    grid-area: cs;
+  grid-area: cs;
 }
 
 #sandals {
-    grid-area: sn;
+  grid-area: sn;
 }
 
 #loafers {
-    grid-area: lof;
+  grid-area: lof;
 }
 
 .sizes {
-    width: 275px;
-    height: 390px;
-    box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596);
+  width: 275px;
+  height: 390px;
+  box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2),
+    0 6px 20px 0 rgba(22, 13, 107, 0.596);
 }
 
 .sizes:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
