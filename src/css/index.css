@@ -2,4 +2,5 @@
 @import "./home/home.css";
 @import "./home/kitchen.css";
 @import "./home/others.css";
-@import "./home/brands.css"
+@import "./home/brands.css";
+@import "./login/login.css";

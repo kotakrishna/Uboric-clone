@@ -35,6 +35,11 @@
     text-align: center;
     font-size: 16px;
     font-weight: 600;
+    color: rgb(236, 81, 81);
+}
+
+#home-top>#mid-one:hover {
+    color: rgb(60, 7, 65);
 }
 
 #home-top>#mid-one>img {
@@ -54,10 +59,10 @@
     border-radius: 10px;
     width: 200px;
     height: 40px;
-    font-weight: 600;
-    font-size: 16px;
-    color: brown;
-    background-color: rgb(219, 212, 201);
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(233, 233, 131);
+    background-color: rgb(6, 6, 73);
 }
 
 #home-top button:hover {
