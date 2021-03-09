@@ -1,0 +1,28 @@
+#others {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 100%;
+    height: 375px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "anp bat dig";
+    box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596);
+}
+
+#anti-punc {
+    grid-area: anp;
+}
+
+#bath-acc {
+    grid-area: bat;
+}
+
+#dig-prod {
+    grid-area: dig;
+}
+
+#anti-punc:hover,
+#bath-acc:hover,
+#dig-prod:hover {
+    transform: scale(1.02);
+}
