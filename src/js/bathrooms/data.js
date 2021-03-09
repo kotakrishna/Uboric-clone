@@ -103,6 +103,5 @@ var data={
         price:"499.00",
         description:"Aroma Soap Dish Anti Rust, Corrosion-Free 304 Stainless Steel Soap Dish with Glass and Silver Finish, single soap dish",
         src:"https://www.uboric.com/wp-content/uploads/2020/10/A-2001_result.jpg"
-    },
-
+    }
 }
