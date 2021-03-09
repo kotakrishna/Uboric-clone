@@ -1,5 +1,9 @@
 @import "./../../reset.css";
-@import "./product.css";
+@import "./../aside-product.css";
+@import "./../aside-options.css";
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -19,10 +23,6 @@
   display: grid;
 }
 
-body {
-  box-sizing: border-box;
-}
-
 main {
   width: 100vw;
   font-family: var(--family);
@@ -31,4 +31,11 @@ main {
 
 main > * {
   width: 100%;
+}
+
+.links,
+h2 {
+  width: fit-content;
+  margin: auto;
+  color: var(--primary-color);
 }
