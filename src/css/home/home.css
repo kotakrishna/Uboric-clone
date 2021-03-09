@@ -1,4 +1,6 @@
 @import "./src/css/reset.css";
+@import "./kitchen.css";
+@import "./others.css";
 * {
     box-sizing: border-box;
 }
