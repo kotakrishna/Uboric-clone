@@ -12,7 +12,6 @@
 
 #brand1 {
     grid-area: bran1;
-    /* border: 2px solid red; */
     display: grid;
     grid-template-columns: repeat(8, minmax(7%, 1fr));
     grid-template-areas: "b1 b2 b3 b4 b5 b6 b7 b8";
@@ -20,7 +19,6 @@
 
 #brand2 {
     grid-area: bran2;
-    /* border: 2px solid brown; */
     display: grid;
     grid-template-columns: repeat(8, minmax(7%, 1fr));
     grid-template-areas: "b1 b2 b3 b4 b5 b6 b7 b8";
@@ -28,7 +26,6 @@
 
 #brand3 {
     grid-area: bran3;
-    /* border: 2px solid burlywood; */
     display: grid;
     grid-template-columns: repeat(8, minmax(7%, 1fr));
     grid-template-areas: "b1 b2 b3 b4 b5 b6 b7 b8";
