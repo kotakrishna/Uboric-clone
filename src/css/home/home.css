@@ -3,6 +3,10 @@
     box-sizing: border-box;
 }
 
+#cont {
+    margin-left: 20px;
+}
+
 .disp-grid {
     display: grid;
 }
@@ -49,6 +53,15 @@
     width: 200px;
     height: 40px;
     font-weight: 600;
+    font-size: 16px;
+    color: brown;
+    background-color: rgb(219, 212, 201);
+}
+
+#home-top button:hover {
+    transform: scale(1.02);
+    color: antiquewhite;
+    background-color: brown;
 }
 
 #left-one>button {
@@ -93,27 +106,62 @@
 
 #men-foot {
     grid-area: mf;
-    background-image: url("https://www.uboric.com/wp-content/uploads/2020/08/Mens-2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #women-foot {
     grid-area: wf;
-    background-image: url("https://www.uboric.com/wp-content/uploads/2020/08/Womens-2.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #kid-foot {
     grid-area: kf;
-    background-image: url("https://www.uboric.com/wp-content/uploads/2020/08/Kids-1.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
 }
 
 #men-foot:hover,
 #women-foot:hover,
 #kid-foot:hover {
+    transform: scale(1.02);
+}
+
+.foot {
+    width: 475px;
+    height: 375px;
+}
+
+#shoes {
+    margin-top: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 200px;
+    grid-template-columns: repeat(5, minmax(15%, 1fr));
+    grid-template-areas: "ss cp cs sn lof";
+}
+
+#spSho {
+    grid-area: ss;
+}
+
+#chaps {
+    grid-area: cp;
+}
+
+#casSho {
+    grid-area: cs;
+}
+
+#sandals {
+    grid-area: sn;
+}
+
+#loafers {
+    grid-area: lof;
+}
+
+#shoes>div>.foot-size {
+    width: 275px;
+    height: 390px;
+    box-shadow: 0 4px 8px 0 rgba(10, 5, 5, 0.2), 0 6px 20px 0 rgba(88, 28, 28, 0.19);
+}
+
+#shoes>div>.foot-size:hover {
     transform: scale(1.02);
 }
