@@ -1,52 +1,42 @@
-var input=document.getElementById("search")
-// .value.toUpperCase()
-var table=document.getElementById("mytable")
-var slider= document.getElementById("price")
+var data=document.getElementById("product_cont")
+console.log(data);
+
+var x=data.getElementsByTagName("article")
+console.log(x);
 
 function go(val){
-    {
-        var output=document.getElementById("output")
-    output.innerHTML=val
-    var tr=table.getElementsByTagName("tr")
-    for(let i=0;i<tr.length;i++){
-        let  td= tr[i].getElementsByTagName("td")[2]
-        
-        if(td){
-            
-            let textvalue=td.textContent || td.innerHTML;
-            
-            if(Number(textvalue)<val){
-                tr[i].style.display=""
-            }
-            else{
-                tr[i].style.display="none"
-            }
+
+    for(let i=0;i<x.length;i++){
+        // var y=x.getElementsByTagName("h3")
+        // console.log
+        let each_product=(x[i].getElementsByTagName("p")[1].querySelector(".new-price").textContent);
+        var price_of_each=(Number( each_product.slice(2,each_product.length-1)));
+
+        if(Number(price_of_each)>val){
+            x[i].style.display=""
+        }
+        else{
+            x[i].style.display="none"
         }
     }
+}
+function go1(val){
+
+    for(let i=0;i<x.length;i++){
+        // var y=x.getElementsByTagName("h3")
+        // console.log
+        let each_product=(x[i].getElementsByTagName("p")[1].querySelector(".new-price").textContent);
+        var price_of_each=(Number( each_product.slice(2,each_product.length-1)));
+
+        if(Number(price_of_each)<val){
+            x[i].style.display=""
+        }
+        else{
+            x[i].style.display="none"
+        }
     }
 }
 
-
-function call(){
-    // console.log(input.value.toUpperCase());
-    var tr=table.getElementsByTagName("tr")
-    for(let i=0;i<tr.length;i++){
-        let  td= tr[i].getElementsByTagName("td")[1]
-        // console.log(td.innerHTML);
-        if(td){
-            // console.log(td[i].innerHTML);
-            let textvalue=td.textContent || td.innerHTML;
-            // console.log(textvalue.toUpperCase().indexOf);
-            if(textvalue.toUpperCase().indexOf(input.value.toUpperCase())>-1){
-                tr[i].style.display=""
-            }
-            else{
-                tr[i].style.display="none"
-            }   
-        }
-    }
-
-}
 
 var inputLeft = document.getElementById("input-left");
 var inputRight = document.getElementById("input-right");
@@ -61,7 +51,7 @@ function setLeftValue() {
 		max = parseInt(_this.max);
 
 	_this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
-    // console.log(_this.value);
+    console.log(_this.value);
     go(_this.value)
 
 	var percent = ((_this.value - min) / (max - min)) * 100;
@@ -69,6 +59,7 @@ function setLeftValue() {
 	thumbLeft.style.left = percent + "%";
 	range.style.left = percent + "%";
 }
+setRightValue();
 setLeftValue();
 
 function setRightValue() {
@@ -77,14 +68,13 @@ function setRightValue() {
 		max = parseInt(_this.max);
 
 	_this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
-    // console.log(_this.value);    
-    go(_this.value)
+    console.log(_this.value);    
+    go1(_this.value)
 	var percent = ((_this.value - min) / (max - min)) * 100;
 
 	thumbRight.style.right = (100 - percent) + "%";
 	range.style.right = (100 - percent) + "%";
 }
-setRightValue();
 
 inputLeft.addEventListener("input", setLeftValue);
 inputRight.addEventListener("input", setRightValue);
@@ -115,13 +105,3 @@ inputRight.addEventListener("mouseup", function() {
 	thumbRight.classList.remove("active");
 });
 
-
-
-var obj={
-    headph:{
-        name:"",
-        src:"",
-        title:"",
-
-    }
-}
