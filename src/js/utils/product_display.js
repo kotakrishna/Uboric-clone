@@ -68,10 +68,10 @@ switch (obj["tittle"]) {
         }
         go4()
         break;
-    case "Bathroom Accessories":
+    case "Health & Personal Care":
         // product=
         async function go5(){
-            var im=import("../bathrooms/data.js")
+            var im=import("../health_and_personal/data.js")
             var wt=await(im)
           product= ( wt["default"][id])
           console.log(product);
@@ -79,10 +79,21 @@ switch (obj["tittle"]) {
         }
         go5()
         break;
-    case "Bathroom Accessories":
+    case "Kitchen-ware":
         // product=
         async function go6(){
-            var im=import("../bathrooms/data.js")
+            var im=import("../kitchen_ware/kitchen.js")
+            var wt=await(im)
+          product= ( wt["default"][id])
+          console.log(product);
+            h1.innerHTML=product["company_name"]
+        }
+        go6()
+        break;
+    case "Kids's Footwear":
+        // product=
+        async function go6(){
+            var im=import("../kitchen_ware/kitchen.js")
             var wt=await(im)
           product= ( wt["default"][id])
           console.log(product);
