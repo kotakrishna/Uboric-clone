@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GROCERY</title>
+    <link rel="stylesheet" href="./../css/pages/grocery/grocery.css" ; />
+    <link rel="stylesheet" href="../kota/search/slider_style.css" />
+  </head>
+  <body>
+    <main>
+      <h2>MENS</h2>
+
+      <section class="links">
+        <a href="./../../index.html">Home</a>
+        >
+        <a href="#">Products</a>
+        >
+        <a href="#">GROCERY</a>
+      </section>
+
+      <section class="display-flex">
+        <aside class="options">
+          <div class="search-box">
+            <input type="text" placeholder="Search for products" id="search" />
+          </div>
+
+          <hr />
+
+          <div class="price-slider">
+            <hr id="connect-price" />
+            <div class="price-range display-flex">
+              <p>₹199</p>
+              <p>₹5,999</p>
+            </div>
+            <div id="the">
+              <div class="middle">
+                <div class="multi-range-slider">
+                  <input
+                    type="range"
+                    id="input-left"
+                    min="100"
+                    max="1500"
+                    value="250"
+                  />
+                  <input
+                    type="range"
+                    id="input-right"
+                    min="100"
+                    max="1500"
+                    value="1250"
+                  />
+
+                  <div class="slider">
+                    <div class="track"></div>
+                    <div class="range"></div>
+                    <div class="thumb left"></div>
+                    <div class="thumb right"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="brands-cont">
+            <button>Brands</button>
+            <input type="text" id="brand-name" />
+
+            <div class="brands">
+              <ul>
+                <li>6SPEED</li>
+                <li>Adda</li>
+                <li>ADDOXY</li>
+                <li>Adidas</li>
+                <li>Adidas</li>
+                <li>ALPINO</li>
+                <li>Altero</li>
+              </ul>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="footwear-cat">
+            <div>
+              <input type="checkbox" />
+              <p>CASUAL CHAPPAL/SLIPPERS</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>CASUAL SANDALS</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>CASUAL/PARTY SHOES</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>CHAPPAL/SLIPPERS</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>CROCS</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>FLIP FLOPS</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>LOAFERS</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>Mojdi</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>POLISH</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>SNEAKERS</p>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="product-color">
+            <div>
+              <h2>Product Colour</h2>
+              <p>+</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>AQUA/GREEN</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>BLACK</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>BEIGE</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>BEIGE/BLACK</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>BEIGE/BROWN</p>
+            </div>
+
+            <p id="show-more">Show more</p>
+          </div>
+
+          <hr />
+
+          <div class="product-size">
+            <button>Product Size</button>
+            <input type="text" id="size" />
+          </div>
+
+          <hr />
+
+          <div class="product-clouser">
+            <button>Product Clouser</button>
+            <input type="text" id="clouser" />
+          </div>
+
+          <hr />
+        </aside>
+
+        <!-- Products Container -->
+        <aside id="product_cont" class="products-cont display-grid">
+          <article class="product display-flex">
+            <img
+              src="https://www.uboric.com/wp-content/uploads/2021/03/ra.png"
+              alt="name
+              "
+              class="item-img"
+            />
+            <h3>Aroma Double Soap Dish Anti Rust,...</h3>
+            <p class="price">
+              <span class="new-price">₹599.0</span>
+            </p>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="./../js/grocery/grocery.js"></script>
+    <script src="../kota/search/input_search.js"></script>
+    <script src="../kota/search/slider_search.js"></script>
+  </body>
+</html>
