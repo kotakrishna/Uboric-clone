@@ -46,6 +46,30 @@ h2 {
 }
 
 .item-img {
-  width: 200px;
+  width: 290px;
   margin: auto;
+}
+
+.category {
+  box-shadow: var(--shadow);
+  height: 100%;
+  padding: 10px 0;
+}
+
+article,
+.tags {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.products-cont {
+  flex-direction: column;
+}
+
+.tags a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  cursor: pointer;
 }
