@@ -25,3 +25,15 @@ function socks() {
 function ft() {
     window.location.href = "./src/pages/footwear.html"
 }
+
+function kw() {
+    window.location.href = "./src/pages/kitchen-ware.html"
+}
+
+function hc() {
+    window.location.href = "./src/pages/health-care.html"
+}
+
+function groc() {
+    window.location.href = "./src/pages/grocery.html"
+}
