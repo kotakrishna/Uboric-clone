@@ -37,3 +37,6 @@ function hc() {
 function groc() {
     window.location.href = "./src/pages/grocery.html"
 }
+function spi() {
+    window.location.href = "./src/pages/spice.html"
+}
