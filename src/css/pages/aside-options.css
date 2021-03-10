@@ -1,6 +1,6 @@
 .options {
   flex-basis: 30%;
-  padding: 25px;
+  padding: 50px;
 }
 
 .search-box input,
@@ -13,10 +13,6 @@
   border-radius: 2px;
   cursor: auto;
 }
-
-/* .search-box input:target {
-  color: red;
-} */
 
 .brands-cont button,
 .product-size button,
