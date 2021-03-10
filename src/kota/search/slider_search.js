@@ -9,6 +9,7 @@ function go(val){
     for(let i=0;i<x.length;i++){
         // var y=x.getElementsByTagName("h3")
         // console.log
+        if((x[i].getElementsByTagName("p")[1])){
         let each_product=(x[i].getElementsByTagName("p")[1].querySelector(".new-price").textContent);
         var price_of_each=(Number( each_product.slice(2,each_product.length-1)));
 
@@ -20,11 +21,15 @@ function go(val){
         }
     }
 }
+}
 function go1(val){
 
     for(let i=0;i<x.length;i++){
         // var y=x.getElementsByTagName("h3")
-        // console.log
+        // console.log'
+        if((x[i].getElementsByTagName("p")[1])){
+
+        
         let each_product=(x[i].getElementsByTagName("p")[1].querySelector(".new-price").textContent);
         var price_of_each=(Number( each_product.slice(2,each_product.length-1)));
 
@@ -35,6 +40,7 @@ function go1(val){
             x[i].style.display="none"
         }
     }
+}
 }
 
 
