@@ -1,9 +1,9 @@
-function createProduct(data,key) {
+function createProduct(data, key) {
   const productStr = `
   <article data-id="${key}" class="product display-flex">
     <p data-id="${key}" class="offer">-50%</p>
-    <img data-id="${key}" src=${data.src} alt=${data.tittle} class="item-img"
-    />
+    <div data-id="${key}"><img data-id="${key}" src=${data.src} alt=${data.tittle} class="item-img"
+    /></div>
     <div data-id="${key}" class="gallery"></div>
     <h3><span data-id="${key}">${data.company_name}</span> <span data-id="${key}">${data.tittle}</span></h3>
     <p data-id="${key}" class="price">

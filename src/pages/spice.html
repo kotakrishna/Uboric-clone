@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kitchen-ware</title>
-    <link rel="stylesheet" href="./../css/pages/kitchen-ware/kitchen.css" />
+    <title>SPICES</title>
+    <link rel="stylesheet" href="./../css/pages/spice/spice.css" />
     <link rel="stylesheet" href="../kota/search/slider_style.css" />
   </head>
   <body>
     <main>
-      <h2>Kitchen-ware</h2>
+      <h2>SPICES</h2>
 
       <section class="links">
         <a href="./../../index.html">Home</a>
         >
         <a href="#">Products</a>
         >
-        <a href="#">Kitchen-ware</a>
+        <a href="#">SPICES</a>
       </section>
 
       <section class="display-flex">
         <aside class="options">
           <div class="search-box">
-            <input type="text" id="search" placeholder="Search for products" />
+            <input type="text" placeholder="Search for products" id="search" />
           </div>
 
           <hr />
@@ -84,23 +84,6 @@
 
           <hr />
 
-          <div class="person-cat">
-            <div>
-              <input type="checkbox" />
-              <p>Air Tight containers</p>
-            </div>
-            <div>
-              <input type="checkbox" />
-              <p>Gas lighter</p>
-            </div>
-            <div>
-              <input type="checkbox" />
-              <p>Kitchen Tools</p>
-            </div>
-          </div>
-
-          <hr />
-
           <div class="product-color">
             <div>
               <h2>Product Colour</h2>
@@ -152,50 +135,32 @@
         </aside>
 
         <!-- Products Container -->
-        <aside id="product_cont" class="products-cont display-flex">
-          <article class="display-grid">
-            <a href="#" class="category display-flex" data-id="0">
+        <aside id="product_cont" class="products-cont display-grid">
+          <article class="product display-flex">
+            <p class="offer">-50%</p>
+            <div>
               <img
-                src="https://www.uboric.com/wp-content/uploads/2021/02/Air-Tight-Containers.png"
-                alt="Air tight containers"
+                src="https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result-400x267.jpg"
+                alt="name
+              "
                 class="item-img"
-                data-id="0"
               />
-            </a>
-
-            <a href="#" class="category display-flex" data-id="1">
-              <img
-                src="https://www.uboric.com/wp-content/uploads/2021/02/Gas-Lighter.png"
-                alt="Gas lighter"
-                class="item-img"
-                data-id="1"
-              />
-            </a>
-
-            <a href="#" class="category display-flex" data-id="2">
-              <img
-                src="https://www.uboric.com/wp-content/uploads/2021/02/kithchen-tools.png"
-                alt="kitchen tools"
-                class="item-img"
-                data-id="2"
-              />
-            </a>
-          </article>
-
-          <article class="tags display-grid">
-            <a href="#" data-id="0">Air Tight containers </a>
-            <a href="#" data-id="1">Gas lighter</a>
-            <a href="#" data-id="2">Kitchen Tools</a>
+            </div>
+            <div class="gallery"></div>
+            <h3>Aroma Double Soap Dish Anti Rust,...</h3>
+            <p class="price">
+              <span class="line-through"></span>
+              <span class="old-price"> ₹1,999.00 </span>
+              <span class="new-price"> ₹999.00 </span>
+            </p>
           </article>
         </aside>
       </section>
     </main>
 
-    <script type="module" src=""></script>
+    <script type="module" src="./../js/spices/spice.js"></script>
     <script src="../kota/search/input_search.js"></script>
     <script src="../kota/search/slider_search.js"></script>
     <script src="../js/utils/to_page.js"></script>
-    <!-- <script src="../kota/search/input_search.js"></script>
-    <script src="../kota/search/slider_search.js"></script> -->
   </body>
 </html>
