@@ -1,5 +1,10 @@
 @import "./../../reset.css";
-@import "./product.css";
+@import "./../aside-options.css";
+@import "./../aside-product.css";
+
+* {
+  box-sizing: border-box;
+}
 
 :root {
   --gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -19,10 +24,6 @@
   display: grid;
 }
 
-body {
-  box-sizing: border-box;
-}
-
 main {
   width: 100vw;
   font-family: var(--family);
@@ -31,4 +32,27 @@ main {
 
 main > * {
   width: 100%;
+}
+
+.links,
+h2 {
+  width: fit-content;
+  margin: auto;
+  color: var(--primary-color);
+}
+
+.links a {
+  cursor: pointer;
+}
+
+.item-img {
+  width: 230px;
+  height: 160px;
+  margin: auto;
+}
+
+.offer {
+  position: absolute;
+  top: 18px;
+  padding: 8px 5px;
 }

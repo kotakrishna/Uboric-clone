@@ -7,33 +7,15 @@
     margin-right: 5%;
 }
 
-#kit-data {
+#kit {
     margin-top: 10px;
     margin-bottom: 20px;
     gap: 10px;
     width: 100%;
     height: 375px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "kt at gl";
+    grid-template: "mf wf kf";
     box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(22, 13, 107, 0.596);
-}
-
-#kit-tools {
-    grid-area: kt;
-}
-
-#air-tight {
-    grid-area: at;
-}
-
-#gas-lit {
-    grid-area: gl;
-}
-
-#kit-tools:hover,
-#air-tight:hover,
-#gas-lit:hover {
-    transform: scale(1.02);
 }
 
 #spices {
@@ -44,24 +26,4 @@
     grid-template-columns: repeat(5, minmax(15%, 1fr));
     grid-template-areas: "sp1 sp2 sp3 sp4 sp5";
     margin-bottom: 20px;
-}
-
-#sp1 {
-    grid-area: sp1;
-}
-
-#sp2 {
-    grid-area: sp2;
-}
-
-#sp3 {
-    grid-area: sp3;
-}
-
-#sp4 {
-    grid-area: sp4;
-}
-
-#sp5 {
-    grid-area: sp5;
 }

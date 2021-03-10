@@ -4,29 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bathroom Accessories</title>
-    <link
-      rel="stylesheet"
-      href="./../css/pages/bathroom-accessories/bathroom.css"
-    />
+    <title>Women's Footwear</title>
+    <link rel="stylesheet" href="./../css/pages/foot-wear/women/women.css" ; />
     <link rel="stylesheet" href="../kota/search/slider_style.css" />
   </head>
   <body>
     <main>
-      <h2>Bathroom Accessories</h2>
+      <h2>WOMENS</h2>
 
       <section class="links">
         <a href="./../../index.html">Home</a>
         >
         <a href="#">Products</a>
         >
-        <a href="#">Bathroom Accessories</a>
+        <a href="#">FOOT WEAR</a>
+        >
+        <a href="#">WOMENS</a>
       </section>
 
       <section class="display-flex">
         <aside class="options">
           <div class="search-box">
-            <input type="text" placeholder="Search for products" id="search" />
+            <input type="text" id="search" placeholder="Search for products" />
           </div>
 
           <hr />
@@ -87,6 +86,29 @@
 
           <hr />
 
+          <div class="footwear-cat">
+            <div>
+              <input type="checkbox" />
+              <p>BELLY</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>SANDALS</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>SLIPPERS & FLOATERS</p>
+            </div>
+
+            <div>
+              <input type="checkbox" />
+              <p>SPORTS SHOES & SNEAKERS</p>
+            </div>
+          </div>
+
+          <hr />
+
           <div class="product-color">
             <div>
               <h2>Product Colour</h2>
@@ -119,31 +141,40 @@
 
             <p id="show-more">Show more</p>
           </div>
+
+          <hr />
+
+          <div class="product-size">
+            <button>Product Size</button>
+            <input type="text" id="size" />
+          </div>
+
+          <hr />
+
+          <div class="product-clouser">
+            <button>Product Clouser</button>
+            <input type="text" id="clouser" />
+          </div>
+
+          <hr />
         </aside>
 
         <!-- Products Container -->
         <aside id="product_cont" class="products-cont display-grid">
           <article class="product display-flex">
-            <p class="offer">-50%</p>
             <img
-              src="https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result-400x267.jpg"
+              src="https://www.uboric.com/wp-content/uploads/2019/12/fe4618c043ad5d860331149ed80888ef_result.jpg"
               alt="name
               "
               class="item-img"
             />
-            <div class="gallery"></div>
             <h3>Aroma Double Soap Dish Anti Rust,...</h3>
-            <p class="price">
-              <span class="line-through"></span>
-              <span class="old-price"> ₹1,999.00 </span>
-              <span class="new-price"> ₹999.00 </span>
-            </p>
           </article>
         </aside>
       </section>
     </main>
 
-    <script type="module" src="./../js/bathrooms/bathroom.js"></script>
+    <script type="module" src="./../js/footwear/women/women.js"></script>
     <script src="../kota/search/input_search.js"></script>
     <script src="../kota/search/slider_search.js"></script>
   </body>

@@ -5,22 +5,10 @@ h2 {
   margin-top: 30px;
 }
 
-.links,
-h2 {
-  width: fit-content;
-  margin: auto;
-  color: var(--primary-color);
-}
-
 .links > a {
   display: inline-block;
   color: var(--primary-color);
   margin: 10px;
-}
-
-.options {
-  flex-basis: 30%;
-  border: 1px solid red;
 }
 
 .products-cont {
@@ -28,23 +16,25 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 35px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .product {
   box-shadow: var(--shadow);
-
+  position: relative;
   font-size: var(--a-font-size);
   padding: 30px 0;
   text-align: center;
   border-radius: var(--round-radius);
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
 }
 
 .gallery {
   margin-bottom: 20px;
   width: 100%;
   height: 50px;
-  border: 1px solid red;
 }
 
 .item-img {
@@ -54,6 +44,7 @@ h2 {
 .price {
   margin-top: 10px;
   position: relative;
+  bottom: 0;
 }
 
 .old-price {
@@ -83,4 +74,40 @@ h2 {
   font-size: 14px;
   color: white;
   margin-left: 10px;
+}
+
+.price-slider {
+  position: relative;
+}
+
+#the {
+  background-color: white !important;
+  margin: auto;
+  width: 100%;
+}
+
+#connect-price {
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.price-range {
+  width: 90%;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+  position: absolute;
+}
+
+.price-range p {
+  padding: 3px 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
 }
