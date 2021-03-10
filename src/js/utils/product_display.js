@@ -92,14 +92,25 @@ switch (obj["tittle"]) {
         break;
     case "Kids's Footwear":
         // product=
-        async function go6(){
+        async function go7(){
             var im=import("../kitchen_ware/kitchen.js")
             var wt=await(im)
           product= ( wt["default"][id])
           console.log(product);
             h1.innerHTML=product["company_name"]
         }
-        go6()
+        go7()
+        break;
+    case "Search":
+        // product=
+        async function go8(){
+            var im=import("../kitchen_ware/kitchen.js")
+            var wt=await(im)
+          product= ( wt["default"][id])
+          console.log(product);
+            h1.innerHTML=product["company_name"]
+        }
+        go8()
         break;
 
     default:
