@@ -2,7 +2,7 @@ const data = {
   0: {
     company_name: "Aroma",
     title: "Double Soap Dish",
-    price: "999.00",
+    price: 999.00,
     description:
       "Aroma Double Soap Dish Anti Rust, Corrosion-Free 304 Stainless Steel Double Soap Dish with Glass and Silver Finish, Twin soap dish",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result.jpg",
@@ -10,7 +10,7 @@ const data = {
   1: {
     company_name: "Aroma",
     title: "Napkin Hanger",
-    price: "499.00",
+    price: 499.00,
     description:
       "Aroma Napkin Hanger Anti Rust, Corrosion-Free 304 Stainless Steel Napkin Hanger with Glass and Silver Finish, Napkin Hanger",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2003_result.jpg",
@@ -18,7 +18,7 @@ const data = {
   2: {
     company_name: "Aroma",
     title: "Soap Dish Stand",
-    price: "499.00",
+    price: 499.00,
     description:
       "Aroma Soap Dish Anti Rust, Corrosion-Free 304 Stainless Steel Soap Dish with Glass and Silver Finish, single soap dish",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2001_result.jpg",
@@ -26,7 +26,7 @@ const data = {
   3: {
     company_name: "Aroma",
     title: "Soap Dispenser",
-    price: "699.00",
+    price: 699.00,
     description:
       "Aroma Soap Dispenser Anti Rust, Corrosion-Free 304 Stainless Steel Soap Dispenser with Glass and Silver Finish, Soap Dispenser",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result.jpg",
@@ -34,7 +34,7 @@ const data = {
   4: {
     company_name: "Aroma",
     title: "Grade 2 in 1 Soap Dish",
-    price: "1,049.00",
+    price: 1049.00,
     description:
       "Aroma Stainless Steel 304 Grade 2 in 1 Soap Dish with Soap Dispenser/Bathroom Accessories",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2011_result.jpg",
@@ -42,7 +42,7 @@ const data = {
   5: {
     company_name: "Aroma",
     title: "Towel Rack",
-    price: "1,599.00",
+    price: 1599.00,
     description:
       "Aroma Stainless Steel 304 Grade Towel Rack for Bathroom/Towel Stand/Towel Hanger/Bathroom Accessories (18 Inch- Chrome Black)",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result.jpg",
@@ -50,7 +50,7 @@ const data = {
   6: {
     company_name: "Aroma",
     title: "Grade 2 in 1 Soap Dish",
-    price: "1,049.00",
+    price: 1049.00,
     description:
       "Aroma Stainless Steel 304 Grade 2 in 1 Soap Dish with Soap Dispenser/Bathroom Accessories",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2011_result.jpg",
@@ -58,7 +58,7 @@ const data = {
   7: {
     company_name: "Aroma",
     title: "Grade 2 in 1 Soap Dish",
-    price: "1,049.00",
+    price: 1049.00,
     description:
       "Aroma Stainless Steel 304 Grade 2 in 1 Soap Dish with Soap Dispenser/Bathroom Accessories",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2011_result.jpg",
@@ -66,7 +66,7 @@ const data = {
   8: {
     company_name: "Aroma",
     title: "Soap Dish Stand",
-    price: "499.00",
+    price: 499.00,
     description:
       "Aroma Soap Dish Anti Rust, Corrosion-Free 304 Stainless Steel Soap Dish with Glass and Silver Finish, single soap dish",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2001_result.jpg",
@@ -74,7 +74,7 @@ const data = {
   9: {
     company_name: "Aroma",
     title: "Soap Dispenser",
-    price: "699.00",
+    price: 699.00,
     description:
       "Aroma Soap Dispenser Anti Rust, Corrosion-Free 304 Stainless Steel Soap Dispenser with Glass and Silver Finish, Soap Dispenser",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result.jpg",
@@ -82,7 +82,7 @@ const data = {
   10: {
     company_name: "Aroma",
     title: "Grade 2 in 1 Soap Dish",
-    price: "1,049.00",
+    price: 1049.00,
     description:
       "Aroma Stainless Steel 304 Grade 2 in 1 Soap Dish with Soap Dispenser/Bathroom Accessories",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2011_result.jpg",
@@ -90,7 +90,7 @@ const data = {
   11: {
     company_name: "Aroma",
     title: "Towel Rack",
-    price: "1,599.00",
+    price: 1599.00,
     description:
       "Aroma Stainless Steel 304 Grade Towel Rack for Bathroom/Towel Stand/Towel Hanger/Bathroom Accessories (18 Inch- Chrome Black)",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result.jpg",
@@ -98,7 +98,7 @@ const data = {
   12: {
     company_name: "Aroma",
     title: "Grade 2 in 1 Soap Dish",
-    price: "1,049.00",
+    price: 1049.00,
     description:
       "Aroma Stainless Steel 304 Grade 2 in 1 Soap Dish with Soap Dispenser/Bathroom Accessories",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2011_result.jpg",
@@ -106,7 +106,7 @@ const data = {
   13: {
     company_name: "Aroma",
     title: "Grade 2 in 1 Soap Dish",
-    price: "1,049.00",
+    price: 1049.00,
     description:
       "Aroma Stainless Steel 304 Grade 2 in 1 Soap Dish with Soap Dispenser/Bathroom Accessories",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2011_result.jpg",
@@ -114,7 +114,7 @@ const data = {
   14: {
     company_name: "Aroma",
     title: "Soap Dish Stand",
-    price: "499.00",
+    price: 499.00,
     description:
       "Aroma Soap Dish Anti Rust, Corrosion-Free 304 Stainless Steel Soap Dish with Glass and Silver Finish, single soap dish",
     src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2001_result.jpg",

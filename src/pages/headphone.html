@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bathroom Accessories</title>
     <link rel="stylesheet" href="./../css/pages/headphone/headphone.css" />
+    <!-- <link rel="stylesheet" href="../search/slider_style.css"> -->
+    <link rel="stylesheet" href="../kota/search/slider_style.css">
   </head>
   <body>
     <main>
@@ -16,7 +18,7 @@
         >
         <a href="#">Products</a>
         >
-        <a href="#">Electronics</a>
+        <a href="#">Electronics</a> 
         >
         <a href="#">Headphones</a>
       </section>
@@ -24,12 +26,28 @@
       <section class="display-flex">
         <aside class="options">
           <div class="search-box">
-            <input type="text" placeholder="Search for products" />
+            <input type="text" placeholder="Search for products" id="search" />
           </div>
 
           <hr />
 
-          <div class="price-slider"></div>
+          <div class="price-slider">
+            <div id="the">
+              <div class="middle">
+                  <div class="multi-range-slider">
+                      <input type="range" id="input-left" min="100" max="1500" value="250">
+                      <input type="range" id="input-right" min="100" max="1500" value="1250">
+              
+                      <div class="slider">
+                          <div class="track"></div>
+                          <div class="range"></div>
+                          <div class="thumb left"></div>
+                          <div class="thumb right"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
 
           <hr />
 
@@ -87,7 +105,7 @@
         </aside>
 
         <!-- Products Container -->
-        <aside class="products-cont display-grid"></aside>
+        <aside id="product_cont" class="products-cont display-grid"></aside>
       </section>
     </main>
 
@@ -95,5 +113,9 @@
       type="module"
       src="./../js/electronics/headphones/headphone.js"
     ></script>
+    <script src="../kota/search/input_search.js"></script>
+    <script src="../kota/search/slider_search.js"></script>
+    <!-- <script type="module" src="../search/slider_search.js"></script>
+    <script type="module" src="../search/input_search.js"></script> -->
   </body>
 </html>
