@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Women's Footwear</title>
     <link rel="stylesheet" href="./../css/pages/foot-wear/women/women.css" ; />
+    <link rel="stylesheet" href="../kota/search/slider_style.css">
   </head>
   <body>
     <main>
@@ -24,12 +25,28 @@
       <section class="display-flex">
         <aside class="options">
           <div class="search-box">
-            <input type="text" placeholder="Search for products" />
+            <input type="text" id="search" placeholder="Search for products" />
           </div>
 
           <hr />
 
-          <div class="price-slider"></div>
+          <div class="price-slider">
+            <div id="the">
+              <div class="middle">
+                  <div class="multi-range-slider">
+                      <input type="range" id="input-left" min="100" max="1500" value="250">
+                      <input type="range" id="input-right" min="100" max="1500" value="1250">
+              
+                      <div class="slider">
+                          <div class="track"></div>
+                          <div class="range"></div>
+                          <div class="thumb left"></div>
+                          <div class="thumb right"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          </div>
 
           <hr />
 
@@ -126,7 +143,7 @@
         </aside>
 
         <!-- Products Container -->
-        <aside class="products-cont display-grid">
+        <aside id="product_cont" class="products-cont display-grid">
           <article class="product display-flex">
             <img
               src="https://www.uboric.com/wp-content/uploads/2019/12/fe4618c043ad5d860331149ed80888ef_result.jpg"
@@ -141,5 +158,7 @@
     </main>
 
     <script type="module" src="./../js/footwear/women/women.js"></script>
+    <script src="../kota/search/input_search.js"></script>
+    <script src="../kota/search/slider_search.js"></script>
   </body>
 </html>
