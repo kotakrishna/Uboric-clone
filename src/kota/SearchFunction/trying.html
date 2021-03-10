@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bathroom Accessories</title>
-    <!-- href="./../css/pages/bathroom-accessories/bathroom.css" -->
-    <link
+    <!-- <link
       rel="stylesheet"
-      href="../../css/pages/bathroom-accessories/bathroom.css"
-    />
-    <!-- <link rel="stylesheet" href="./trying.css"> -->
+      href="./../css/pages/bathroom-accessories/bathroom.css"
+    /> -->
+    <link rel="stylesheet" href="../../css/pages/bathroom-accessories/bathroom.css">
+    <!-- <link rel="stylesheet" href="../kota/search/slider_style.css" /> -->
     <link rel="stylesheet" href="../search/slider_style.css">
   </head>
   <body>
@@ -28,27 +28,44 @@
       <section class="display-flex">
         <aside class="options">
           <div class="search-box">
-            <input type="text" id="search" placeholder="Search for products"/>
+            <input type="text" placeholder="Search for products" id="search" />
           </div>
 
           <hr />
 
           <div class="price-slider">
+            <hr id="connect-price" />
+            <div class="price-range display-flex">
+              <p>₹199</p>
+              <p>₹5,999</p>
+            </div>
             <div id="the">
               <div class="middle">
-                  <div class="multi-range-slider">
-                      <input type="range" id="input-left" min="100" max="1500" value="250">
-                      <input type="range" id="input-right" min="100" max="1500" value="1250">
-              
-                      <div class="slider">
-                          <div class="track"></div>
-                          <div class="range"></div>
-                          <div class="thumb left"></div>
-                          <div class="thumb right"></div>
-                      </div>
+                <div class="multi-range-slider">
+                  <input
+                    type="range"
+                    id="input-left"
+                    min="100"
+                    max="1500"
+                    value="250"
+                  />
+                  <input
+                    type="range"
+                    id="input-right"
+                    min="100"
+                    max="1500"
+                    value="1250"
+                  />
+
+                  <div class="slider">
+                    <div class="track"></div>
+                    <div class="range"></div>
+                    <div class="thumb left"></div>
+                    <div class="thumb right"></div>
                   </div>
+                </div>
               </div>
-          </div>
+            </div>
           </div>
 
           <hr />
@@ -129,8 +146,11 @@
     </main>
 
     <!-- <script type="module" src="./../js/bathrooms/bathroom.js"></script> -->
-    <script type="module" src="./trying.js"></script>
-    <script type="module" src="../search/slider_search.js"></script>
-    <script type="module" src="../search/input_search.js"></script>
+    <script src="../../js/bathrooms/bathroom.js"></script>
+    <script src="../../js/bathrooms/data.js"></script>
+    <script src="../search/input_search.js"></script>
+    <script src="../search/slider_search.js"></script>
+    <!-- <script src="../kota/search/input_search.js"></script>
+    <script src="../kota/search/slider_search.js"></script> -->
   </body>
 </html>
