@@ -18,7 +18,7 @@ function kidft() {
     window.location.href = "./src/pages/kids-footwear.html"
 }
 
-function socks() {
+function sock() {
     window.location.href = "./src/pages/socks.html"
 }
 
@@ -37,6 +37,7 @@ function hc() {
 function groc() {
     window.location.href = "./src/pages/grocery.html"
 }
+
 function spi() {
     window.location.href = "./src/pages/spice.html"
 }
