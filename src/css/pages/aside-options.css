@@ -1,10 +1,12 @@
 .options {
   flex-basis: 30%;
-  padding: 25px;
+  padding: 50px;
 }
 
 .search-box input,
-.brands-cont button {
+.brands-cont button,
+.product-size button,
+.product-clouser button {
   font-size: 20px;
   padding: 20px;
   width: 95%;
@@ -12,13 +14,11 @@
   cursor: auto;
 }
 
-/* .search-box input:target {
-  color: red;
-} */
-
-.brands-cont button {
+.brands-cont button,
+.product-size button,
+.product-clouser button {
   font-size: 20px;
-  padding: 0 10px;
+  padding: 13px;
   margin: 20px 0;
   text-align: left;
   color: var(--old-price-color);
@@ -33,7 +33,9 @@ input {
 }
 
 .brands,
-#brand-name {
+#brand-name,
+#size,
+#clouser {
   display: none;
 }
 
@@ -42,10 +44,12 @@ input {
   margin: 0;
 }
 
-.product-color > div {
+.product-color > div,
+.person-cat > div,
+.footwear-cat > div {
   display: flex;
   align-items: center;
-  margin: 20px 0;
+  margin: 10px 0;
   color: rgb(80, 79, 79);
 }
 

@@ -1,3 +1,7 @@
 function bath() {
-    window.location.href = "file:///C:/Users/Lenovo/Desktop/sm2_051_deepak/Uboric-clone/src/pages/bathroom.html"
+    window.location.href = "./src/pages/bathroom.html"
+}
+
+function hdp() {
+    window.location.href = "./src/pages/headphone.html"
 }

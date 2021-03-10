@@ -16,7 +16,7 @@ h2 {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 35px;
-  padding: 20px;
+  padding: 40px;
 }
 
 .product {
@@ -28,6 +28,7 @@ h2 {
   border-radius: var(--round-radius);
   flex-direction: column;
   justify-content: space-between;
+  height: fit-content;
 }
 
 .gallery {
