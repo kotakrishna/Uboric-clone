@@ -1,5 +1,7 @@
 
-
+#footer{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 #footer1{
     height: 70vh;
@@ -34,10 +36,13 @@ grid-template: 'he he he';
     width: 12%;
     text-align: center;
     background-color: rgba(233, 198, 44, 0.603);
-    color: white;
+    color: black;
     margin: auto;
     margin-top: -80px;
     
+}
+.footer_button:hover{
+    background-color: white;
 }
 .footer_star{
     font-size: 20px;
@@ -50,5 +55,33 @@ grid-template: 'he he he';
     background-color: black;
     height:50vh;
     width: 100%;
+    color: white;
+   
 }
+.footer2_img{
+    
+    margin: 3% 42% ;
 
+}
+.footer2_contain>a{
+    float: left;
+    margin: 3%;
+    text-align: center;
+    margin-top: -1%;
+    color: white;
+   
+}
+.footer2_para{
+    text-align: center;
+    clear: both;
+    font-size: 20px;
+}
+.footer2_contain{
+    margin: 0% 10%;
+}
+.footer2_last{
+text-align: center;
+margin:0px 2px;
+padding-top: 3%;
+
+}
