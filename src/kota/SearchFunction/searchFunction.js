@@ -4,28 +4,6 @@ var table=document.getElementById("mytable")
 var slider= document.getElementById("price")
 
 function go(val){
-    // console.log(slider.value);
-    // if(!val){
-    // var output=document.getElementById("output")
-    // output.innerHTML=slider.value
-    // var tr=table.getElementsByTagName("tr")
-    // for(let i=0;i<tr.length;i++){
-    //     let  td= tr[i].getElementsByTagName("td")[2]
-        
-    //     if(td){
-            
-    //         let textvalue=td.textContent || td.innerHTML;
-            
-    //         if(Number(textvalue)<slider.value){
-    //             tr[i].style.display=""
-    //         }
-    //         else{
-    //             tr[i].style.display="none"
-    //         }
-    //     }
-    // }
-    // }
-    // else
     {
         var output=document.getElementById("output")
     output.innerHTML=val
