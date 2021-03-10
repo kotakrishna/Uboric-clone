@@ -45,21 +45,6 @@ h2 {
   cursor: pointer;
 }
 
-.product {
-  height: fit-content;
-}
-
-.product h3 {
-  color: #313131;
-  font-size: 20px;
-  margin-top: 20px;
-  cursor: pointer;
-}
-
 .item-img {
-  display: block;
-  padding: 6px 0;
   width: 200px;
-
-  margin: auto;
 }
