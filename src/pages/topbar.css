@@ -5,6 +5,7 @@
     padding-bottom: 1%;
     background-color: white;
     padding-left: 10px;
+    z-index: 100;
 }
 
 .nav-bar div>a {

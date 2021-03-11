@@ -132,7 +132,7 @@
     .wf:hover,
     .kf:hover {
         transform: scale(1.02);
-        /* transition: ease-in-out; */
+        transition: ease-in-out;
     }
     
     .foot {
