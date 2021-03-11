@@ -1,0 +1,156 @@
+.nav-bar{
+    width: 100%;
+    /* position: fixed; */
+    padding-bottom: 1%;
+    /* background-color: white; */
+    
+}
+.nav-bar div>a{
+   color: black;
+   font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin: 0.5%;
+    margin-right: 0.5%;
+
+}
+
+
+.nav-bar a+img{
+    margin-left: 7%;
+    padding-top: 10px;
+    width: 200px;
+
+}
+
+.nav-bar div>i{
+    padding: 0.5%;
+   color: black;
+    font-size: 15px;
+    margin-right: 0;
+    font-weight: 300;
+}
+   .nav-bar>div{
+       float: left;
+       width: 10%;
+   }
+
+.login{
+    float: right;
+    margin: 2.5%;
+} 
+.addcart{
+    float: right;
+    margin: 2.5%;
+}
+  
+.display-none{
+    display: none;
+     width: 5%;
+     height: 3%;
+    text-align: center;
+}
+.foot-wear{
+    color: grey;
+}
+.mens{
+    display:none
+}
+.mens{
+    width:200px ;
+    background-color: rgb(241, 232, 232);
+    color: grey;
+    margin: 10px;
+}
+
+.kitchen_container{
+    color: grey;
+}
+.kitchenEle{
+    display:none;
+}
+.health_contain{
+    display: none;
+}
+.offerCon{
+  display: none;
+}
+
+.electronic p{
+    width: 100%;
+    height:10%;
+    background:rgb(211, 211, 129);
+    font-size: 20px;
+    color: grey;
+
+}
+  .foot-wear>div{
+      height: 25vh;
+      width: 100%;
+      background-color: rgb(211, 211, 129);
+  }
+
+  .kitchen_container>div{
+
+   height: 30vh;
+      width: 100%;
+      background-color: rgb(211, 211, 129);
+  }
+  .health>div{
+
+    height: 15vh;
+    width: 80%;
+    background-color: rgb(211, 211, 129);
+    color: gray;
+    padding: 0% 15%;
+  }
+  .offer a+a{
+    width: 100%;
+    height: 5vh;
+    background-color: rgb(211, 211, 129);
+    text-align: center;
+    color: gray;
+  }
+
+  .anti:hover{
+      color: orange;
+  }
+   
+  .bathroom:hover{
+    color: orange;
+}
+.electronic>a:hover{
+    color: orange;
+}
+.foot-wear>a:hover{
+    color: orange;
+}
+
+.kitchen_container>a:hover{
+    color: orange;
+}
+
+.health>a:hover{
+    color: orange;
+}
+
+.offer>a:hover{
+    color: orange;
+}
+.spices:hover{
+    color: orange;
+}
+.grocery:hover{
+    color: orange;
+}
+.socks:hover{
+    color: orange;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+    left: 0;
+    top: 40px;
+}

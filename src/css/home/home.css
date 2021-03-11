@@ -1,6 +1,9 @@
-    @import "./src/css/reset.css";
+
+    /* @import "./src/css/reset.css"; */
     @import "./kitchen.css";
     @import "./others.css";
+    @import "./topbar.css";
+    @import "./footer.css";
     * {
         box-sizing: border-box;
     }
