@@ -11,7 +11,7 @@
 
 #headphones:hover {
     transform: scale(1.02);
-    transition-timing-function: ease-in;
+    /* transition-timing-function: ease-in; */
 }
 
 #extra-prod {

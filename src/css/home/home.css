@@ -14,19 +14,18 @@
     }
     
     #home-top {
-        margin-top: 100px;
+        margin-top: 200px;
         gap: 0px;
         width: 100%;
-        max-height: 375px;
+        height: auto;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: "lo mo ro";
+        margin-bottom: 0%;
     }
     
     #home-top>#left-one {
         grid-area: lo;
-        background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Left.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
+        position: relative;
     }
     
     #home-top>#mid-one {
@@ -36,6 +35,7 @@
         font-size: 16px;
         font-weight: 600;
         color: rgb(236, 81, 81);
+        height: 375px;
     }
     
     #home-top>#mid-one:hover {
@@ -43,15 +43,18 @@
     }
     
     #home-top>#mid-one>img {
-        width: 250px;
+        width: 350px;
         height: 250px;
     }
     
-    #right-one {
+    #home-top>#right-one {
         grid-area: ro;
-        background-image: url("https://www.uboric.com/wp-content/uploads/2020/12/Right.jpg");
-        background-size: contain;
-        background-repeat: no-repeat;
+        position: relative;
+    }
+    
+    .im-size {
+        max-width: 100%;
+        height: auto;
     }
     
     #home-top button {
@@ -72,15 +75,15 @@
     }
     
     #left-one>button {
-        position: relative;
-        top: 70%;
-        left: 38%;
+        position: absolute;
+        top: 60%;
+        left: 40%;
     }
     
     #right-one>button {
-        position: relative;
-        top: 70%;
-        left: 10%;
+        position: absolute;
+        top: 60%;
+        left: 15%;
     }
     
     .logo {
@@ -129,7 +132,7 @@
     .wf:hover,
     .kf:hover {
         transform: scale(1.02);
-        transition: ease-in-out;
+        /* transition: ease-in-out; */
     }
     
     .foot {
@@ -175,7 +178,7 @@
     
     .sizes:hover {
         transform: scale(1.02);
-        transition: ease-in-out;
+        /* transition: ease-in-out; */
     }
     
     @media only screen and (max-width: 1200px) {
@@ -183,21 +186,22 @@
             width: 100%;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-areas: "lo mo ro";
-        }
-        #home-top>#left-one {
-            background-size: contain;
+            max-height: 300px;
         }
         #home-top>#mid-one>img {
             max-width: 150px;
             max-height: 100px;
         }
+        #mid-one {
+            min-height: 100px;
+        }
         #left-one>button {
-            position: relative;
+            /* position: relative; */
             top: 56%;
             left: 10%;
         }
         #right-one>button {
-            position: relative;
+            /* position: relative; */
             top: 56%;
             left: 7%;
         }
