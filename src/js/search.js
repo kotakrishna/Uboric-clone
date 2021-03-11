@@ -10,7 +10,7 @@ import createProduct from './utils/createProduct.js';
 
 console.log(bathroom,head,grocerys,socks,spices);
 
-var output=document.getElementById("output")
+var output=document.getElementById("product_cont")
 // var {title}=bathroom["0"]
 // console.log(title);
 // output.innerHTML=createProduct(bathroom["0"],0)
