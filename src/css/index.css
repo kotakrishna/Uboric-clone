@@ -4,5 +4,12 @@
 @import "./home/others.css";
 @import "./home/brands.css";
 @import "./login/login.css";
-@import "./../pages/topbar.css";
-@import "./../pages/footer.css"
+
+/* @import "./../pages/footer.css"; */
+
+@import "./login/login.css";
+
+/* @import "./../pages/topbar.css"; */
+
+@import "./../css/home/footer.css";
+@import "./../css/home/topbar.css"
