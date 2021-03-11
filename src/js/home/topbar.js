@@ -104,12 +104,3 @@ offer.addEventListener("mouseleave", (e) => {
     toggleofferMenu(offerToggle);
 });
 
-var search = document.getElementById("input")
-search.onchange = go
-
-function go() {
-    console.log(search.value);
-    localStorage.setItem("search", search.value)
-    window.location.href = "./search_page.html"
-}
-// console.log( search.value)
