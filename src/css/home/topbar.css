@@ -92,7 +92,7 @@
 
   .kitchen_container>div{
 
-   height: 35vh;
+   height: 30vh;
       width: 100%;
       background-color: rgb(211, 211, 129);
   }
@@ -145,4 +145,12 @@
 }
 .socks:hover{
     color: orange;
+}
+.position-relative{
+    position: relative;
+}
+.position-absolute{
+    position: absolute;
+    left: 0;
+    top: 40px;
 }

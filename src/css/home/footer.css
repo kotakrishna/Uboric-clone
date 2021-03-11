@@ -57,6 +57,7 @@ grid-template: 'he he he';
     width: 100%;
     color: white;
    
+   
 }
 .footer2_img{
     
@@ -77,7 +78,8 @@ grid-template: 'he he he';
     font-size: 20px;
 }
 .footer2_contain{
-    margin: 0% 10%;
+    margin: 0% 8%;
+    text-decoration: none;
 }
 .footer2_last{
 text-align: center;
