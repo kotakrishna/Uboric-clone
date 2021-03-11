@@ -41,3 +41,15 @@ function groc() {
 function spi() {
     window.location.href = "./src/pages/spice.html"
 }
+
+var search = document.getElementById("input")
+search.onchange = go
+
+function go() {
+    console.log(search.value);
+    localStorage.setItem("search",search.value)
+    // window.location.href = "./search_page.html"
+    // window.location.href = "./../../pages/search_page.html"
+    // window.location.href = "src/pages/search_page.html"
+    window.location.href = "src/pages/search_page.html"
+}
