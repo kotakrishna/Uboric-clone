@@ -70,6 +70,7 @@ grid-template: 'he he he';
     text-align: center;
     margin-top: -1%;
     color: white;
+    text-decoration: none;
    
 }
 .footer2_para{
@@ -79,11 +80,20 @@ grid-template: 'he he he';
 }
 .footer2_contain{
     margin: 0% 8%;
-    text-decoration: none;
+    
 }
 .footer2_last{
 text-align: center;
 margin:0px 2px;
 padding-top: 3%;
 
+}
+.footer2_contain>a:hover{
+    color: yellow;
+   
+}
+
+
+.footer2_para:hover{
+    color: yellow;
 }
