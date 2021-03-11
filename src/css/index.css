@@ -78,3 +78,12 @@
     justify-content: space-evenly;
     border-radius: 50%;
 }
+
+/* @import "./../pages/footer.css"; */
+
+@import "./login/login.css";
+
+/* @import "./../pages/topbar.css"; */
+
+@import "./../css/home/footer.css";
+@import "./../css/home/topbar.css"
