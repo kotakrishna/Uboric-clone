@@ -5,3 +5,39 @@ function bath() {
 function hdp() {
     window.location.href = "./src/pages/headphone.html"
 }
+
+function menft() {
+    window.location.href = "./src/pages/men-footwear.html"
+}
+
+function womenft() {
+    window.location.href = "./src/pages/women-footwear.html"
+}
+
+function kidft() {
+    window.location.href = "./src/pages/kids-footwear.html"
+}
+
+function sock() {
+    window.location.href = "./src/pages/socks.html"
+}
+
+function ft() {
+    window.location.href = "./src/pages/footwear.html"
+}
+
+function kw() {
+    window.location.href = "./src/pages/kitchen-ware.html"
+}
+
+function hc() {
+    window.location.href = "./src/pages/health-care.html"
+}
+
+function groc() {
+    window.location.href = "./src/pages/grocery.html"
+}
+
+function spi() {
+    window.location.href = "./src/pages/spice.html"
+}

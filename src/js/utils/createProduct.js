@@ -1,15 +1,15 @@
-function createProduct(data) {
+function createProduct(data, key) {
   const productStr = `
-  <article class="product display-flex">
-    <p class="offer">-50%</p>
-    <img src=${data.src} alt=${data.tittle} class="item-img"
-    />
-    <div class="gallery"></div>
-    <h3><span>${data.company_name}</span> <span>${data.title}</span></h3>
-    <p class="price">
-      <span class="line-through"></span>
-      <span class="old-price"> ₹1,999.00 </span>
-      <span class="new-price"> ₹${data.price} </span>
+  <article data-id="${key}" class="product display-flex">
+    <p data-id="${key}" class="offer">-50%</p>
+    <div data-id="${key}"><img data-id="${key}" src=${data.src} alt=${data.tittle} class="item-img"
+    /></div>
+    <div data-id="${key}" class="gallery"></div>
+    <h3><span data-id="${key}">${data.company_name}</span> <span data-id="${key}">${data.tittle}</span></h3>
+    <p data-id="${key}" class="price">
+      <span data-id="${key}" class="line-through"></span>
+      <span data-id="${key}" class="old-price"> ₹1,999.00 </span>
+      <span data-id="${key}" class="new-price"> ₹${data.price} </span>
     </p>
   </article>
   `;

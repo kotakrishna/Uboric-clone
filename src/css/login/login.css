@@ -1,3 +1,5 @@
+/* @import "./src/css/reset.css"; */
+
 * {
     box-sizing: border-box;
 }
@@ -52,6 +54,7 @@
     margin-left: 40%;
     color: darkblue;
     font-weight: 600;
+    text-align: justify;
 }
 
 label,
@@ -93,4 +96,19 @@ button {
 form>span {
     font-weight: 500;
     line-height: 1.2;
+}
+
+@media only screen and (max-width: 740px) {
+    #log-data {
+        display: grid;
+        gap: 60px;
+        grid-template-rows: repeat(2, minmax(45%, 1fr));
+        grid-template: "lo" "re";
+        width: 60%;
+        margin: auto;
+        margin-top: 40px;
+    }
+    button {
+        margin-top: 10px;
+    }
 }
