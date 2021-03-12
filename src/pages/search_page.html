@@ -1,222 +1,260 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./../css/pages/bathroom-accessories/bathroom.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./../css/pages/bathroom-accessories/bathroom.css"
+    />
     <link rel="stylesheet" href="./../kota/search/slider_style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search</title>
     <link rel="stylesheet" href="./topbar.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="main-container">
-            <div class="header">
-                <div class="nav-bar topnav">
-                    <a href="./../../index.html"><img src="https://i.ibb.co/HqYs9wH/uboric.png" alt="" /></a>
+      <section class="top-nav display-flex">
+        <div class="uboric-logo">
+          <a href="#"
+            ><img
+              src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"
+              alt="Logo"
+          /></a>
+        </div>
 
-                    <input id="input" style="margin: 0% 10%; font-size: 30px; width: 40%" type="search" />
-                    <a href=""><i style="margin: 0% -10%; font-size: 25px"class="fa fa-search"></i ></a>
+        <div class="query-box display-flex">
+          <input
+            id="input"
+            type="search"
+            placeholder="What are you looking for"
+          />
+          <a href="#"><i class="fa fa-search"></i></a>
+        </div>
 
-                    <a class="addcart" href="./cart.html"><img src="https://i.ibb.co/F6rwTHM/addcart.png" alt="" /></a>
-                    <a class="login" href="./../login.html"><img src="https://i.ibb.co/khJ73gc/laogin.png" alt="" /></a>
-                    <div></div>
+        <div class="display-flex">
+          <a class="login" href="./src/login.html">
+            <section class="signin position-relative">
+              <i class="fa fa-user-circle"></i>
 
-                    <div style="clear: both"></div>
+              <div class="signup position-absolute">
+                <h1>Sign in</h1>
+                <p>CREATE AN ACCOUNT</p>
 
-                    <div>
-                        <a class="anti" href="">Anti Puncture Liquid</a>
-                    </div>
-                    <div>
-                        <a class="bathroom" href="./bathroom.html">Bathroom Accessories</a>
-                    </div>
+                <label>username or email <i style="color: orange">*</i></label>
+                <input type="email" />
+                <label>password <i style="color: orange"> *</i></label
+                ><br />
+                <input type="password" /><br />
+                <p>LOST YOUR PASSWORD</p>
+                <br />
+                <button>LOGIN</button>
+              </div>
+            </section>
+          </a>
+          <a class="addcart" href=""><i class="fa fa-cart-plus"></i> </a>
+        </div>
+      </section>
 
-                    <div class="electronic position-relative">
-                        <a class="headphone" href="">Electronics <i class="fa fa-chevron-down"></i></a>
+      <section class="nav-bar topnav display-flex">
+        <div>
+          <a class="anti" href="">Anti Puncture Liquid</a>
+        </div>
+        <div>
+          <a class="bathroom" href="./src/pages/bathroom.html"
+            >Bathroom Accessories</a
+          >
+        </div>
 
-                        <a href="./headphone.html">
-                            <p class="display-none position-absolute">Headphones</p>
-                        </a>
-                    </div>
+        <div class="electronic position-relative">
+          <a class="headphone" href="./src/pages/headphone.html"
+            >Electronics <i class="fa fa-chevron-down"></i
+          ></a>
+          <div class="display-none position-absolute headphone-con sub-cat">
+            <a href="./src/pages/headphone.html">Headphones</a>
+          </div>
+        </div>
 
-                    <div>
-                        <a class="socks" href="./socks.html">Socks</a>
-                    </div>
+        <div>
+          <a class="socks" href="./src/pages/socks.html">Socks</a>
+        </div>
 
-                    <div class="foot-wear position-relative">
-                        <a href="./footwear.html">Foot Wear<i class="fa fa-chevron-down"></i></a>
-                        <div style="margin-top: -21px;" class="mens position-absolute">
-                            <a href="./men-footwear.html">
-                                <p style="font-size: 20px;margin-top: 2px;color: gray;padding: 0px 17px;">MENS<i class="fa fa-chevron-down"></i></p>
-                            </a>
-                            <a href="./women-footwear.html">
-                                <p style="font-size: 20px;margin-top: 2px; color: gray; padding: 0px 17px;">WOMEN <i class="fa fa-chevron-down"></i></p>
-                            </a>
-                            <a href="./kids-footwear.html">
-                                <p style="font-size: 20px;margin-top: 2px;color: gray; padding: 0px 17px;">KIDS<i class="fa fa-chevron-down"></i></p>
-                            </a>
-                        </div>
-                    </div>
+        <div class="foot-wear position-relative">
+          <a href="">Foot Wear<i class="fa fa-chevron-down"></i></a>
+          <div class="mens position-absolute sub-cat display-flex">
+            <a href="./src/pages/men-footwear.html">MENS</a>
+            <a href="./src/pages/women-footwear.html">WOMEN</a>
+            <a href="./src/pages/kids-footwear.html">KIDS</a>
+          </div>
+        </div>
 
-                    <div class="kitchen_container position-relative">
+        <div class="kitchen_container position-relative">
+          <a href="">Kitchen-Ware<i class="fa fa-chevron-down"></i></a>
+          <div class="kitchenEle position-absolute sub-cat">
+            <a href=""> Air Tight Container </a>
+            <a href="">Kitchen Tools</a>
+            <a href="">Gas Lighter</a>
+          </div>
+        </div>
 
-                        <a href="./kitchen-ware.html">Kitchen-Ware<i class="fa fa-chevron-down"></i></a>
-                        <div style="margin-top: -21px;" class="kitchenEle position-absolute ;">
-
-                            <a href="">
-                                <p style="font-size: 20px;margin-top: -10px; color: gray; padding: 0px 17px;"> Air Tight Container</p>
-                            </a><br />
-                            <a href="">
-                                <p style=" font-size: 20px; margin-top: -10px; color: gray;   padding: 0px 17px;  "> Kitchen Tools</p>
-                            </a><br />
-                            <a href="">
-                                <p style=" font-size: 20px; margin-top: -10px; color: gray; padding: 0px 17px; "> Gas Lighter </p>
-                            </a><br />
-                        </div>
-                    </div>
-
-                    <div class="health position-relative">
-                        <a href="">Personal&Health Care<i class="fa fa-chevron-down"></i></a>
-                        <div class="health_contain position-absolute">
-                            <a href="./health-care.html">
-                                <p style="font-size: 20px;margin-top: 5px; color: grey;"></p> Health Care</a><br />
-                            <a href="">
-                                <p style="font-size: 20px;margin-top: 5px; color: grey;"></p>Personal Care</a><br />
-                        </div>
-                    </div>
-                    <div class="offer-con position-relative">
-                        <a href="">Offer zone<i class="fa fa-chevron-down"></i></a>
-                        <a class="offerCon position-absolute" href="">
-                            <p style="font-size: 20px;"></p>50% off</a><br />
-                    </div>
-                    <div>
-                        <a class="spices" href="./spice.html">Spices<i class="fa fa-chevron-down"></i></a>
-                    </div>
-                    <div>
-                        <a class="grocery" href="./grocery.html">Grocery<i class="fa fa-chevron-down"></i></a>
-                    </div>
-                </div>
+        <div class="health position-relative">
+          <a href="./src/pages/health-care.html"
+            >Personal & Health Care<i class="fa fa-chevron-down"></i
+          ></a>
+          <div class="health_contain position-absolute sub-cat">
+            <a href="./src/pages/health-care.html">Health Care </a>
+            <a href="">Personal Care </a>
+          </div>
+        </div>
+        <div class="offer-con position-relative">
+          <a href="">Offer zone<i class="fa fa-chevron-down"></i></a>
+          <a class="offerCon position-absolute sub-cat" href=""> 50% off</a>
+        </div>
+        <div>
+          <a class="spices" href="./src/pages/spice.html">Spices</a>
+        </div>
+        <div>
+          <a class="grocery" href="./src/pages/grocery.html">Grocery</a>
+        </div>
+      </section>
     </header>
-    <div style="margin-top: 5vh;"></div>
     <main>
-        <section class="links">
-            <a href="./../../index.html">Home</a> >
-            <a href="#">Products</a> >
-            <a href="#">Bathroom Accessories</a>
-        </section>
+      <section class="links">
+        <a href="./../../index.html">Home</a> > <a href="#">Products</a> >
+        <a href="#">Bathroom Accessories</a>
+      </section>
 
-        <section class="display-flex">
-            <aside class="options">
-                <div class="search-box">
-                    <input type="text" placeholder="Search for products" id="search" />
+      <section class="display-flex">
+        <aside class="options">
+          <div class="search-box">
+            <input type="text" placeholder="Search for products" id="search" />
+          </div>
+
+          <hr />
+
+          <div class="price-slider">
+            <hr id="connect-price" />
+            <div class="price-range display-flex">
+              <p>₹199</p>
+              <p>₹5,999</p>
+            </div>
+            <div id="the">
+              <div class="middle">
+                <div class="multi-range-slider">
+                  <input
+                    type="range"
+                    id="input-left"
+                    min="100"
+                    max="1500"
+                    value="250"
+                  />
+                  <input
+                    type="range"
+                    id="input-right"
+                    min="100"
+                    max="1500"
+                    value="1250"
+                  />
+
+                  <div class="slider">
+                    <div class="track"></div>
+                    <div class="range"></div>
+                    <div class="thumb left"></div>
+                    <div class="thumb right"></div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
 
-                <hr />
+          <hr />
 
-                <div class="price-slider">
-                    <hr id="connect-price" />
-                    <div class="price-range display-flex">
-                        <p>₹199</p>
-                        <p>₹5,999</p>
-                    </div>
-                    <div id="the">
-                        <div class="middle">
-                            <div class="multi-range-slider">
-                                <input type="range" id="input-left" min="100" max="1500" value="250" />
-                                <input type="range" id="input-right" min="100" max="1500" value="1250" />
+          <div class="brands-cont">
+            <button>Brands</button>
+            <input type="text" id="brand-name" />
 
-                                <div class="slider">
-                                    <div class="track"></div>
-                                    <div class="range"></div>
-                                    <div class="thumb left"></div>
-                                    <div class="thumb right"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="brands">
+              <ul>
+                <li>6SPEED</li>
+                <li>Adda</li>
+                <li>ADDOXY</li>
+                <li>Adidas</li>
+                <li>Adidas</li>
+                <li>ALPINO</li>
+                <li>Altero</li>
+              </ul>
+            </div>
+          </div>
 
-                <hr />
+          <hr />
 
-                <div class="brands-cont">
-                    <button>Brands</button>
-                    <input type="text" id="brand-name" />
+          <div class="product-color">
+            <div>
+              <h2>Product Colour</h2>
+              <p>+</p>
+            </div>
+            <div>
+              <input type="checkbox" />
+              <p>AQUA/GREEN</p>
+            </div>
 
-                    <div class="brands">
-                        <ul>
-                            <li>6SPEED</li>
-                            <li>Adda</li>
-                            <li>ADDOXY</li>
-                            <li>Adidas</li>
-                            <li>Adidas</li>
-                            <li>ALPINO</li>
-                            <li>Altero</li>
-                        </ul>
-                    </div>
-                </div>
+            <div>
+              <input type="checkbox" />
+              <p>BLACK</p>
+            </div>
 
-                <hr />
+            <div>
+              <input type="checkbox" />
+              <p>BEIGE</p>
+            </div>
 
-                <div class="product-color">
-                    <div>
-                        <h2>Product Colour</h2>
-                        <p>+</p>
-                    </div>
-                    <div>
-                        <input type="checkbox" />
-                        <p>AQUA/GREEN</p>
-                    </div>
+            <div>
+              <input type="checkbox" />
+              <p>BEIGE/BLACK</p>
+            </div>
 
-                    <div>
-                        <input type="checkbox" />
-                        <p>BLACK</p>
-                    </div>
+            <div>
+              <input type="checkbox" />
+              <p>BEIGE/BROWN</p>
+            </div>
 
-                    <div>
-                        <input type="checkbox" />
-                        <p>BEIGE</p>
-                    </div>
+            <p id="show-more">Show more</p>
+          </div>
 
-                    <div>
-                        <input type="checkbox" />
-                        <p>BEIGE/BLACK</p>
-                    </div>
+          <hr />
 
-                    <div>
-                        <input type="checkbox" />
-                        <p>BEIGE/BROWN</p>
-                    </div>
+          <div class="product-size">
+            <button>Product Size</button>
+            <input type="text" id="size" />
+          </div>
 
-                    <p id="show-more">Show more</p>
-                </div>
+          <hr />
 
-                <hr />
+          <div class="product-clouser">
+            <button>Product Clouser</button>
+            <input type="text" id="clouser" />
+          </div>
 
-                <div class="product-size">
-                    <button>Product Size</button>
-                    <input type="text" id="size" />
-                </div>
+          <hr />
+        </aside>
 
-                <hr />
-
-                <div class="product-clouser">
-                    <button>Product Clouser</button>
-                    <input type="text" id="clouser" />
-                </div>
-
-                <hr />
-            </aside>
-
-            <!-- Products Container -->
-            <aside id="product_cont" class="products-cont display-grid">
-                <div id="output"></div>
-                <!-- <article class="product display-flex">
+        <!-- Products Container -->
+        <aside id="product_cont" class="products-cont display-grid">
+          <div id="output"></div>
+          <!-- <article class="product display-flex">
                 <p class="offer">-50%</p>
                 <img
                 src="https://www.uboric.com/wp-content/uploads/2020/10/A-2009_result-400x267.jpg"
@@ -232,8 +270,8 @@
               <span class="new-price"> ₹999.00 </span>
             </p>
         </article> -->
-            </aside>
-        </section>
+        </aside>
+      </section>
     </main>
     <!-- <script type="module" src="./../js/bathrooms/bathroom.js"></script> -->
     <script src="./../kota/search/input_search.js"></script>
@@ -241,6 +279,5 @@
     <script src="./topbar.js"></script>
     <script src="../js/utils/to_page.js"></script>
     <script type="module" src="./../js/search.js"></script>
-</body>
-
+  </body>
 </html>

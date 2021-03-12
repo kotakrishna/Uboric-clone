@@ -12,7 +12,8 @@ a:hover {
   color: #d1a442 !important;
 }
 
-input {
+input,
+button {
   outline: none;
   background: none;
   border: none;
@@ -65,9 +66,6 @@ header {
 }
 
 .top-nav {
-}
-
-.top-nav {
   justify-content: space-between;
   width: 100%;
   display: flex;
@@ -115,10 +113,6 @@ input::placeholder {
   color: gray;
   font-size: 20px !important;
 }
-
-/* .nav-bar > div {
-  width: fit-content;
-} */
 
 .nav-bar {
   width: 100%;
@@ -180,41 +174,47 @@ input::placeholder {
 }
 
 .signup {
-  height: 500px;
-  left: -200px;
+  left: -17vw;
   width: 300px;
-  transition: all;
-  background-color: whitesmoke;
+  /* transition: all; */
+  background-color: #fff;
+  flex-direction: column;
+  z-index: 20;
+  padding: 30px;
 }
 
 .signup h1 {
-  padding: 8%;
   font-size: 40px;
-  color: rgb(42, 42, 92);
+  color: var(--primary-color);
 }
 
 .signup p {
   text-align: center;
+  color: black;
+  margin-top: 20px;
+}
+
+.signup i {
+  font-size: 30px !important;
 }
 
 .signup label {
-  padding: 8%;
   font-size: 20px;
   color: gray;
 }
 
 .signup input {
-  font-size: 20px;
-  padding: 1.2% 4%;
-  margin: 20px 8%;
+  margin-bottom: 20px;
+  font-size: 23px;
+  border: 1px solid rgb(194, 194, 194);
 }
 
 .signup button {
   text-align: center;
-  width: 280px;
-  background-color: orange;
+  border: 2px solid black;
+  border-radius: var(--round-radius);
+  background-color: var(--button-background);
   font-size: 21px;
-  margin: 20px 8%;
 }
 
 .signup {
