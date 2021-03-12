@@ -2,7 +2,7 @@ var data = {
   0: {
     // Company_name:"Aroma",
     tittle: "CASUL CHAPPAL/SLIPPERS",
-    COUNT: 79,
+    price: 79,
     // description:"Aroma Double Soap Dish Anti Rust, Corrosion-Free 304 Stainless Steel Double Soap Dish with Glass and Silver Finish, Twin soap dish",
     src:
       "https://www.uboric.com/wp-content/uploads/2019/12/fe4618c043ad5d860331149ed80888ef_result.jpg",
