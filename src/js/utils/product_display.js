@@ -1,118 +1,86 @@
 // var url=new URL
 // console.log(window.location)
 
-var obj=localStorage.getItem("data")
-var h1=document.getElementById("h1")
-obj=JSON.parse(obj)
+var obj = localStorage.getItem("data");
+var h1 = document.getElementById("h1");
+obj = JSON.parse(obj);
 
-var {id,tittle}=obj
-console.log(id,tittle);
-var product=null
+var { id, tittle } = obj;
+console.log(id, tittle);
+var product = null;
+
+async function importData(path) {
+  var im = import(path);
+  var wt = await im;
+  product = wt["default"][id];
+  console.log(product);
+  showProduct(product);
+}
+
 switch (obj["tittle"]) {
-    case "Bathroom Accessories":
-        // product=
-        async function go(){
-            var im=import("../bathrooms/data.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go()
-         
-        // console.log(im);
-        break;
-    case "Head Phones":
-        // product=
-        async function go1(){
-            var im=import("../Electronics/HeadPhones/data.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go1()
-        break;
-    case "Buy Socks Products Online":
-        // product=
-        async function go2(){
-            var im=import("../Socks/data.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go2()
-         
-        // console.log(im);
-        break;
-    case "Women's Footwear":
-        // product=
-        async function go3(){
-            var im=import("../Footwear/women/data.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go3()
-        break;
-    case "Men's Footwear":
-        // product=
-        async function go4(){
-            var im=import("../Footwear/Men/data.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go4()
-        break;
-    case "Health & Personal Care":
-        // product=
-        async function go5(){
-            var im=import("../health_and_personal/data.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go5()
-        break;
-    case "Kitchen-ware":
-        // product=
-        async function go6(){
-            var im=import("../kitchen_ware/kitchen.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go6()
-        break;
-    case "Kids's Footwear":
-        // product=
-        async function go7(){
-            var im=import("../kitchen_ware/kitchen.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go7()
-        break;
-    case "Search":
-        // product=
-        async function go8(){
-            var im=import("../kitchen_ware/kitchen.js")
-            var wt=await(im)
-          product= ( wt["default"][id])
-          console.log(product);
-            h1.innerHTML=product["company_name"]
-        }
-        go8()
-        break;
+  case "Bathroom Accessories":
+    importData("../bathrooms/data.js");
 
-    default:
-        break;
+    break;
+  case "Head Phones":
+    importData("../Electronics/HeadPhones/data.js");
+    break;
+
+  case "Buy Socks Products Online":
+    importData("../Socks/data.js");
+    break;
+
+  case "Women's Footwear":
+    importData("../Footwear/women/data.js");
+    break;
+
+  case "Men's Footwear":
+    importData("../Footwear/Men/data.js");
+    break;
+
+  case "Health & Personal Care":
+    importData("../health_and_personal/data.js");
+    break;
+
+  case "Kitchen-ware":
+    importData("../kitchen_ware/kitchen.js");
+    break;
+
+  case "Kids's Footwear":
+    importData("../kitchen_ware/kitchen.js");
+    break;
+
+  default:
+    break;
+}
+
+const imgElem = document.getElementById("img-section");
+const categoryElem = document.getElementById("category");
+const prodNameElemArr = document.querySelectorAll(".prod-name");
+const priceElemArr = document.querySelectorAll(".new-price");
+const descriptionElem = document.querySelector(".prod-description");
+
+function showProduct(data) {
+  const imgStr = `
+    <img src=${data.src} />
+    `;
+
+  const catName = `${tittle}`;
+  const prodName = `${data.tittle}`;
+  const price = `₹${
+    `${data.tittle}`.split(".")[1] ? data.price : data.price + ".00"
+  }`;
+
+  const description = `${data.description}`;
+  prodNameElemArr.forEach((el) => {
+    el.innerHTML = prodName;
+  });
+  priceElemArr.forEach((el) => {
+    el.innerHTML = price;
+  });
+
+  imgElem.innerHTML = imgStr;
+  categoryElem.innerHTML = catName;
+
+  descriptionElem.innerHTML = description;
 }

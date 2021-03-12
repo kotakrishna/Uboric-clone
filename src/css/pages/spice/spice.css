@@ -1,6 +1,8 @@
 @import "./../../reset.css";
 @import "./../aside-product.css";
 @import "./../aside-options.css";
+@import "./../../home/topbar.css";
+@import "./../../home/footer.css";
 
 * {
   box-sizing: border-box;

@@ -1,181 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Health & Personal Care</title>
     <link rel="stylesheet" href="./../css/pages/health-care/health-care.css" />
     <link rel="stylesheet" href="../kota/search/slider_style.css" />
-  </head>
-  <body>
-    <main>
-      <h2>Health & Personal Care</h2>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./../css/index.css" />
+</head>
 
-      <section class="links">
-        <a href="./../../index.html">Home</a>
-        >
-        <a href="#">Products</a>
-        >
-        <a href="#">Health & Personal Care</a>
-      </section>
-
-      <section class="display-flex">
-        <aside class="options">
-          <div class="search-box">
-            <input type="text" id="search" placeholder="Search for products" />
-          </div>
-
-          <hr />
-
-          <div class="price-slider">
-            <hr id="connect-price" />
-            <div class="price-range display-flex">
-              <p>₹199</p>
-              <p>₹5,999</p>
-            </div>
-            <div id="the">
-              <div class="middle">
-                <div class="multi-range-slider">
-                  <input
-                    type="range"
-                    id="input-left"
-                    min="100"
-                    max="1500"
-                    value="250"
-                  />
-                  <input
-                    type="range"
-                    id="input-right"
-                    min="100"
-                    max="1500"
-                    value="1250"
-                  />
-
-                  <div class="slider">
-                    <div class="track"></div>
-                    <div class="range"></div>
-                    <div class="thumb left"></div>
-                    <div class="thumb right"></div>
-                  </div>
+<body>
+    <header>
+        <div class="main-container">
+          <div class="header">
+            <div class="nav-bar topnav">
+              <img src="https://i.ibb.co/HqYs9wH/uboric.png" alt="" />
+    
+              <input id="input" style="margin: 0% 10%; font-size: 30px; width: 40%"type="search"/>
+                   <a href=""><i style="margin: 0% -10%; font-size: 25px"class="fa fa-search"></i ></a>
+    
+                    <a class="addcart" href=""><img src="https://i.ibb.co/F6rwTHM/addcart.png" alt=""/></a>
+                     <a class="login" href="./src/login.html"><img src="https://i.ibb.co/khJ73gc/laogin.png" alt=""/></a>
+              <div></div>
+    
+              <div style="clear: both"></div>
+    
+              <div>
+                <a class="anti" href="">Anti Puncture Liquid</a>
+              </div>
+              <div>
+                <a class="bathroom" href="./src/pages/bathroom.html">Bathroom Accessories</a>
+              </div>
+    
+              <div  class="electronic position-relative">
+                      <a class="headphone" href="">Electronics <i class="fa fa-chevron-down"></i></a>
+                      
+                      <a  href="./src/pages/headphone.html"><p class="display-none position-absolute">Headphones</p></a>
+              </div>
+    
+              <div>
+                      <a class="socks" href="./src/pages/socks.html">Socks</a>
+              </div>
+    
+              <div class="foot-wear position-relative">
+                <a href="">Foot Wear<i class="fa fa-chevron-down"></i></a>
+                <div style="margin-top: -21px;" class="mens position-absolute">
+                     <a href="./src/pages/men-footwear.html"><p style="font-size: 20px;margin-top: 2px;color: gray;padding: 0px 17px;">MENS<i class="fa fa-chevron-down"></i></p></a>
+                     <a href="./src/pages/women-footwear.html"><p style="font-size: 20px;margin-top: 2px; color: gray; padding: 0px 17px;">WOMEN <i class="fa fa-chevron-down"></i></p></a>
+                  <a href="./src/pages/kids-footwear.html"><p style="font-size: 20px;margin-top: 2px;color: gray; padding: 0px 17px;">KIDS<i class="fa fa-chevron-down"></i></p></a>
                 </div>
               </div>
-            </div>
+    
+              <div class="kitchen_container position-relative">
+    
+                <a href="">Kitchen-Ware<i class="fa fa-chevron-down"></i></a>
+                <div style="margin-top: -21px;" class="kitchenEle position-absolute ;">
+    
+                    <a href=""><p style="font-size: 20px;margin-top: -10px; color: gray; padding: 0px 17px;"> Air Tight Container</p></a ><br />
+                    <a href="" ><p style=" font-size: 20px; margin-top: -10px; color: gray;   padding: 0px 17px;  "> Kitchen Tools</p></a><br />
+                     <a href="" ><p style=" font-size: 20px; margin-top: -10px; color: gray; padding: 0px 17px; " > Gas Lighter </p></a ><br />
+                </div>
+              </div>
+    
+              <div class="health position-relative">
+                <a href="">Personal&Health Care<i class="fa fa-chevron-down"></i></a>
+                <div class="health_contain position-absolute">
+                  <a href="./src/pages/health-care.html"><p style="font-size: 20px;margin-top: 5px; color: grey;"></p> Health Care</a><br />
+                  <a href=""><p style="font-size: 20px;margin-top: 5px; color: grey;"></p>Personal Care</a><br />
+                </div>
+              </div>
+              <div class="offer-con position-relative">
+                <a href="">Offer zone<i class="fa fa-chevron-down"></i></a>
+                <a class="offerCon position-absolute" href=""><p style="font-size: 20px;"></p>50% off</a><br />
+              </div>
+              <div>
+                <a class="spices" href="./src/pages/spice.html">Spices<i class="fa fa-chevron-down"></i></a>
+              </div>
+              <div>
+                <a class="grocery" href="./src/pages/grocery.html">Grocery<i class="fa fa-chevron-down"></i></a>
+              </div>
           </div>
+  </header>
+  <div style="margin-top: 5vh;"></div>
+    <main>
+        <h2>Health & Personal Care</h2>
 
-          <hr />
+        <section class="links">
+            <a href="./../../index.html">Home</a> >
+            <a href="#">Products</a> >
+            <a href="#">Health & Personal Care</a>
+        </section>
 
-          <div class="brands-cont">
-            <button>Brands</button>
-            <input type="text" id="brand-name" />
+        <section class="display-flex">
+            <aside class="options">
+                <div class="search-box">
+                    <input type="text" id="search" placeholder="Search for products" />
+                </div>
 
-            <div class="brands">
-              <ul>
-                <li>6SPEED</li>
-                <li>Adda</li>
-                <li>ADDOXY</li>
-                <li>Adidas</li>
-                <li>Adidas</li>
-                <li>ALPINO</li>
-                <li>Altero</li>
-              </ul>
-            </div>
-          </div>
+                <hr />
 
-          <hr />
+                <div class="price-slider">
+                    <hr id="connect-price" />
+                    <div class="price-range display-flex">
+                        <p>₹199</p>
+                        <p>₹5,999</p>
+                    </div>
+                    <div id="the">
+                        <div class="middle">
+                            <div class="multi-range-slider">
+                                <input type="range" id="input-left" min="100" max="1500" value="250" />
+                                <input type="range" id="input-right" min="100" max="1500" value="1250" />
 
-          <div class="person-cat">
-            <div>
-              <input type="checkbox" />
-              <p>Health Care</p>
-            </div>
-            <div>
-              <input type="checkbox" />
-              <p>Personal Care</p>
-            </div>
-          </div>
+                                <div class="slider">
+                                    <div class="track"></div>
+                                    <div class="range"></div>
+                                    <div class="thumb left"></div>
+                                    <div class="thumb right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-          <hr />
+                <hr />
 
-          <div class="product-color">
-            <div>
-              <h2>Product Colour</h2>
-              <p>+</p>
-            </div>
-            <div>
-              <input type="checkbox" />
-              <p>AQUA/GREEN</p>
-            </div>
+                <div class="brands-cont">
+                    <button>Brands</button>
+                    <input type="text" id="brand-name" />
 
-            <div>
-              <input type="checkbox" />
-              <p>BLACK</p>
-            </div>
+                    <div class="brands">
+                        <ul>
+                            <li>6SPEED</li>
+                            <li>Adda</li>
+                            <li>ADDOXY</li>
+                            <li>Adidas</li>
+                            <li>Adidas</li>
+                            <li>ALPINO</li>
+                            <li>Altero</li>
+                        </ul>
+                    </div>
+                </div>
 
-            <div>
-              <input type="checkbox" />
-              <p>BEIGE</p>
-            </div>
+                <hr />
 
-            <div>
-              <input type="checkbox" />
-              <p>BEIGE/BLACK</p>
-            </div>
+                <div class="person-cat">
+                    <div>
+                        <input type="checkbox" />
+                        <p>Health Care</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <p>Personal Care</p>
+                    </div>
+                </div>
 
-            <div>
-              <input type="checkbox" />
-              <p>BEIGE/BROWN</p>
-            </div>
+                <hr />
 
-            <p id="show-more">Show more</p>
-          </div>
+                <div class="product-color">
+                    <div>
+                        <h2>Product Colour</h2>
+                        <p>+</p>
+                    </div>
+                    <div>
+                        <input type="checkbox" />
+                        <p>AQUA/GREEN</p>
+                    </div>
 
-          <hr />
+                    <div>
+                        <input type="checkbox" />
+                        <p>BLACK</p>
+                    </div>
 
-          <div class="product-size">
-            <button>Product Size</button>
-            <input type="text" id="size" />
-          </div>
+                    <div>
+                        <input type="checkbox" />
+                        <p>BEIGE</p>
+                    </div>
 
-          <hr />
+                    <div>
+                        <input type="checkbox" />
+                        <p>BEIGE/BLACK</p>
+                    </div>
 
-          <div class="product-clouser">
-            <button>Product Clouser</button>
-            <input type="text" id="clouser" />
-          </div>
+                    <div>
+                        <input type="checkbox" />
+                        <p>BEIGE/BROWN</p>
+                    </div>
 
-          <hr />
-        </aside>
+                    <p id="show-more">Show more</p>
+                </div>
 
-        <!-- Products Container -->
-        <aside id="product_cont" class="products-cont display-flex">
-          <article class="display-grid">
-            <a href="#" class="category display-flex" data-id="0">
-              <img
-                src="https://www.uboric.com/wp-content/uploads/2020/09/97870666_100349081698219_5403052236844564480_o-768x425.jpg"
-                alt="health care"
-                class="item-img"
-                data-id="0"
-              />
-            </a>
+                <hr />
 
-            <a href="#" class="category display-flex" data-id="1">
-              <img
-                src="https://www.uboric.com/wp-content/uploads/2020/09/Personal-Care-Active-Ingredients-e1600698253849.jpg"
-                alt="personal care"
-                class="item-img"
-                data-id="1"
-              />
-            </a>
-          </article>
+                <div class="product-size">
+                    <button>Product Size</button>
+                    <input type="text" id="size" />
+                </div>
 
-          <article class="tags display-grid">
-            <a href="#" data-id="0">Health Care </a>
-            <a href="#" data-id="1">Personal Care</a>
-          </article>
-        </aside>
-      </section>
+                <hr />
+
+                <div class="product-clouser">
+                    <button>Product Clouser</button>
+                    <input type="text" id="clouser" />
+                </div>
+
+                <hr />
+            </aside>
+
+            <!-- Products Container -->
+            <aside id="product_cont" class="products-cont display-flex">
+                <article class="display-grid">
+                    <a href="#" class="category display-flex" data-id="0">
+                        <img src="https://www.uboric.com/wp-content/uploads/2020/09/97870666_100349081698219_5403052236844564480_o-768x425.jpg" alt="health care" class="item-img" data-id="0" />
+                    </a>
+
+                    <a href="#" class="category display-flex" data-id="1">
+                        <img src="https://www.uboric.com/wp-content/uploads/2020/09/Personal-Care-Active-Ingredients-e1600698253849.jpg" alt="personal care" class="item-img" data-id="1" />
+                    </a>
+                </article>
+
+                <article class="tags display-grid">
+                    <a href="#" data-id="0">Health Care </a>
+                    <a href="#" data-id="1">Personal Care</a>
+                </article>
+            </aside>
+        </section>
     </main>
+    <footer>
+
+        <div id="footer">
+
+            <div id="footer1">
+                <div class="footer_top">
+                    <h1>What Our Customer Says</h1>
+                    <h1>"</h1>
+                </div>
+
+                <div class="footer_para"> Auspicious range of foot wares. Premium branded products. Good service and delivery duration. Super high value of customer. </div>
+
+                <div class="footer_name">Tushar Pandya</div>
+                <div class="footer_star">
+                    <div style="color: yellow;">&#9733; &#9733; &#9733; &#9733; &#9733;-customer</div>
+                </div>
+                <button id="Review" class="footer_button">Add Your Review</button>
+            </div>
+
+            <div id="footer2">
+                <img class="footer2_img ; " src="https://i.ibb.co/x80Vh6J/google-play.png" title="google play">
+
+                <div class="footer2_contain">
+                    <a href=" ">ABOUT US</a>
+                    <a href=" ">CONTACT</a>
+                    <a href=" ">SHIPPING & RETURNS</a>
+                    <a href=" ">MY ACCOUNT</a>
+                    <a href=" ">PRIVACY POLICY</a>
+                    <a href=" ">BECOME A SELLER</a>
+
+                </div>
+                <p class="footer2_para">@ 2019-2020 UBORIC,ALL RIGHTS RESERVED.POWERED BY WEBSMANIAC INC</p>
+
+                <div id="footer2_last" class="footer2_last">
+                    <img href=" " src="https://i.ibb.co/YZ4Fr29/fb.png">
+                    <img src="https://i.ibb.co/dpSvNKq/insta.png">
+                </div>
+
+            </div>
+
+
+        </div>
+    </footer>
+
 
     <script type="module" src=""></script>
     <script src="../kota/search/input_search.js"></script>
@@ -183,5 +282,8 @@
     <script src="../js/utils/to_page.js"></script>
     <!-- <script src="../kota/search/input_search.js"></script>
     <script src="../kota/search/slider_search.js"></script> -->
-  </body>
+    <script src="./../js/home/footer.js"></script>
+    <script src="./../js/home/topbar.js"></script>
+</body>
+
 </html>
