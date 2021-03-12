@@ -1,44 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add to Cart</title>
     <link rel="stylesheet" href="./../css/pages/cart/cart.css" />
-  </head>
-  <body>
-    <header>
-      <section class="top-nav display-flex">
-        <div class="uboric-logo">
-          <a href="./../../index.html"
-            ><img
-              src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg"
-              alt="Logo"
-          /></a>
-        </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./../css/index.css" />
+</head>
 
-        <div class="query-box display-flex">
-          <input
-            id="input"
-            type="search"
-            placeholder="What are you looking for"
-          />
-          <a href="#"><i class="fa fa-search"></i></a>
-        </div>
+<body>
+    </head>
 
-        <div class="display-flex">
-          <section class="signin position-relative">
-            <a class="login" href="./src/login.html"
-              ><i class="fa fa-user-circle"></i>
+    <body>
+        <header>
+            <section class="top-nav display-flex">
+                <div class="uboric-logo">
+                    <a href="./../../index.html"><img src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg" alt="Logo" /></a>
+                </div>
+
+                <div class="query-box display-flex">
+                    <input id="input" type="search" placeholder="What are you looking for" />
+                    <a href="#"><i class="fa fa-search"></i></a>
+                </div>
+
+                <div class="display-flex">
+                    <section class="signin position-relative">
+                        <a class="login" href="./src/login.html"><i class="fa fa-user-circle"></i>
             </a>
-            <div class="signup display-none position-absolute">
-              <h1>Sign in</h1>
-              <p>CREATE AN ACCOUNT</p>
+                        <div class="signup display-none position-absolute">
+                            <h1>Sign in</h1>
+                            <p>CREATE AN ACCOUNT</p>
 
-              <label>username or email <i style="color: orange">*</i></label>
-              <input type="email" />
-              <label>password <i style="color: orange"> *</i></label
+                            <label>username or email <i style="color: orange">*</i></label>
+                            <input type="email" />
+                            <label>password <i style="color: orange"> *</i></label
               ><br />
               <input type="password" /><br />
               <p>LOST YOUR PASSWORD</p>
@@ -116,37 +117,39 @@
     </header>
 
     <main>
-      <h2>Cart</h2>
+        <h2>Cart</h2>
 
-      <section class="links">
-        <a href="./../../index.html">Home</a> >
-        <a href="#">Cart</a>
-      </section>
+        <section class="links">
+            <a href="./../../index.html">Home</a> >
+            <a href="#">Cart</a>
+        </section>
 
-      <section class="display-flex">
-        <aside class="prods-info">
-          <table>
-            <thead>
-              <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </aside>
-        <aside class="cart-info">
-          <h2>Cart totals</h2>
-          <p class="display-flex">
-            <span>Subtotal</span> <span id="sub-total">₹538.00</span>
-          </p>
+        <section class="display-flex">
+            <aside class="prods-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </aside>
+            <aside class="cart-info">
+                <h2>Cart totals</h2>
+                <p class="display-flex">
+                    <span>Subtotal</span> <span id="sub-total">₹538.00</span>
+                </p>
 
-          <button id="order-now">Place Order</button>
-        </aside>
-      </section>
+                <button id="order-now">Place Order</button>
+            </aside>
+        </section>
     </main>
+
     <script src="./../js/cart/cart.js"></script>
-  </body>
+</body>
+
 </html>
