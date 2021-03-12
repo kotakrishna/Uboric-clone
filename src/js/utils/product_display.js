@@ -37,7 +37,7 @@ switch (obj["tittle"]) {
     break;
 
   case "Men's Footwear":
-    importData("../footwear/men/data.js");
+    importData("./../footwear/men/data.js");
     break;
 
   case "Health & Personal Care":
