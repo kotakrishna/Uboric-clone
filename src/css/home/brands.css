@@ -77,3 +77,38 @@
 .b8:hover {
     transform: scale(1.1);
 }
+
+@media only screen and (max-width: 830px) {
+    #brand {
+        gap: 10px;
+        width: 85%;
+        min-height: 200px;
+        margin: auto;
+        grid-template-rows: repeat(3, minmax(30%, 1fr));
+        grid-template-areas: "bran1" "bran2" "bran3";
+        margin-top: 60px;
+        margin-bottom: 20px;
+        gap: 20px;
+    }
+    #brand1 {
+        grid-area: bran1;
+        display: grid;
+        gap: 60px;
+        /* grid-template-columns: repeat(8, minmax(7%, 1fr)); */
+        grid-template-areas: "b1 b2 b3 b4" "b5 b6 b7 b8";
+    }
+    #brand2 {
+        grid-area: bran2;
+        display: grid;
+        gap: 60px;
+        /* grid-template-columns: repeat(8, minmax(7%, 1fr)); */
+        grid-template-areas: "b1 b2 b3 b4" "b5 b6 b7 b8";
+    }
+    #brand3 {
+        grid-area: bran3;
+        display: grid;
+        gap: 60px;
+        /* grid-template-columns: repeat(8, minmax(7%, 1fr)); */
+        grid-template-areas: "b1 b2 b3 b4" "b5 b6 b7 b8";
+    }
+}
