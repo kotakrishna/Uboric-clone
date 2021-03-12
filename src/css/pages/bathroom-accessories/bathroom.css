@@ -1,17 +1,20 @@
 @import "./../../reset.css";
 @import "./../aside-product.css";
 @import "./../aside-options.css";
+@import "./../../home/topbar.css";
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
   --gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   --family: Lato, sans-serif;
-  --a-font-size: 18px;
+  --a-font-size: 1.025rem;
   --old-price-color: #666;
-  --round-radius: 3px;
+  --round-radius: 0.25rem;
   --primary-color: #1e516c;
 }
 
@@ -24,9 +27,8 @@
 }
 
 main {
-  width: 100vw;
   font-family: var(--family);
-  padding: 30px 0;
+  padding: 1.875rem 0;
 }
 
 main > * {
@@ -42,4 +44,108 @@ h2 {
 
 .links a {
   cursor: pointer;
+}
+.display-flex {
+  display: flex;
+}
+
+.display-grid {
+  display: grid;
+}
+
+main {
+  font-family: var(--family);
+  padding: 1.875rem 0;
+}
+
+main > * {
+  width: 100%;
+}
+
+.links,
+h2 {
+  width: fit-content;
+  margin: auto;
+  color: var(--primary-color);
+}
+
+.links a {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 12px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 763px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .display-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .options {
+    width: 100%;
+    flex: 0 1 100%;
+  }
+  .search-box,
+  .brand-cont,
+  .product-size {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 12px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 763px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .display-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .options {
+    width: 100%;
+    flex: 0 1 100%;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .brand-cont,
+  .product-size,
+  .product-size,
+  .product-clouser {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .product-size,
+  .product-clouser {
+    width: 45%;
+  }
 }

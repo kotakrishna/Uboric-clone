@@ -1,99 +1,139 @@
-
-#footer{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+footer {
+  padding: 5rem 0;
 }
 
-#footer1{
-    height: 70vh;
+#footer {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+#footer1 {
+  height: 70vh;
+  padding: 3rem 0;
+  width: 100%;
+  background-color: rgb(105, 105, 32);
+  color: white;
+  margin: auto;
+  display: grid;
+}
+.footer_top {
+  text-align: center;
+  font-size: 1.25rem;
+  padding-top: 1.25rem;
+  grid-template: "he he he";
+}
+.footer_para {
+  width: 70%;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  text-align: center;
+  grid-template: "para para para";
+}
+.footer_name {
+  font-size: 1.25rem;
+  text-align: center;
+  grid-template: "na na na";
+}
+.footer_button {
+  text-align: center;
+  background-color: rgba(233, 198, 44, 0.603);
+  color: black;
+  margin: auto;
+  /* margin-top: -5rem; */
+}
+.footer_button:hover {
+  background-color: white;
+}
+.footer_star {
+  font-size: 1.25rem;
+  margin: auto;
+  color: white;
+}
+
+#footer2 {
+  background-color: black;
+  padding-bottom: 2rem;
+  width: 100%;
+  color: white;
+  line-height: 1.5;
+}
+
+.footer2_img {
+  margin: 3rem 0;
+}
+
+.footer2_contain > a {
+  float: left;
+  margin: 3%;
+  text-align: center;
+  margin-top: -1%;
+  color: white;
+  text-decoration: none;
+}
+.footer2_para {
+  text-align: center;
+  clear: both;
+  font-size: 1.25rem;
+}
+.footer2_contain {
+  margin: 0% 8%;
+}
+.footer2_last {
+  text-align: center;
+  margin: 0px 2px;
+  padding-top: 3%;
+}
+.footer2_contain > a:hover {
+  color: yellow;
+}
+
+.footer2_para:hover {
+  color: yellow;
+}
+
+@media screen and (max-width: 763px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .display-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .options {
     width: 100%;
-    background-color: rgb(105, 105, 32);
-    color: white;
-    margin: auto;
-    display: grid
-}
-.footer_top{
-    text-align: center;
-    font-size: 20px;
-padding-top: 20px;
-grid-template: 'he he he';
-}
-.footer_para{
-    font-size: 25px;
-    text-align: center;
-    padding:0% 10%;
-    margin-top: -80px;
-    grid-template: 'para para para';
-}
-.footer_name{
-    font-size: 20px;
-    text-align: center;
-     margin-top: -40px;
-    grid-template: 'na na na';
-
-}
-.footer_button{
-    height: 50px;
-    width: 12%;
-    text-align: center;
-    background-color: rgba(233, 198, 44, 0.603);
-    color: black;
-    margin: auto;
-    margin-top: -80px;
-    
-}
-.footer_button:hover{
-    background-color: white;
-}
-.footer_star{
-    font-size: 20px;
-    margin: auto;
-    color: white;
-    margin-top: -80px;
-}
-
-#footer2{
-    background-color: black;
-    height:50vh;
+    flex: 0 1 100%;
+  }
+  .search-box {
     width: 100%;
-    color: white;
-   
-   
-}
-.footer2_img{
-    
-    margin: 3% 42% ;
-
-}
-.footer2_contain>a{
-    float: left;
-    margin: 3%;
+  }
+  .brand-cont,
+  .product-size,
+  .product-size,
+  .product-clouser {
+    width: 45%;
+  }
+  footer {
     text-align: center;
-    margin-top: -1%;
-    color: white;
-    text-decoration: none;
-   
-}
-.footer2_para{
-    text-align: center;
-    clear: both;
-    font-size: 20px;
-}
-.footer2_contain{
-    margin: 0% 8%;
-    
-}
-.footer2_last{
-text-align: center;
-margin:0px 2px;
-padding-top: 3%;
-
-}
-.footer2_contain>a:hover{
-    color: yellow;
-   
-}
-
-
-.footer2_para:hover{
-    color: yellow;
+    padding: 1rem 0;
+  }
+  #footer2 {
+    padding: 3rem 1rem;
+  }
+  .footer2_img {
+    display: inline-block;
+    margin: 3rem 0;
+  }
+  .footer2_contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer2_contain a {
+    display: inline-block;
+    margin-bottom: 2rem;
+  }
 }
