@@ -1,47 +1,42 @@
 const electronicCon = document.querySelector(".electronic");
 const dataElem = document.querySelector(".display-none");
 
-
 let toggle = false;
 
 function toggleMenu(bool) {
-    dataElem.style.display = bool ? "block" : "none";
+  dataElem.style.display = bool ? "flex" : "none";
 }
 
 electronicCon.addEventListener("mouseover", (e) => {
-    toggle = true;
-    console.log(toggle)
-    toggleMenu(toggle);
+  toggle = true;
+  console.log(toggle);
+  toggleMenu(toggle);
 });
 electronicCon.addEventListener("mouseleave", (e) => {
-    toggle = false;
-    toggleMenu(toggle);
-    console.log(toggle)
+  toggle = false;
+  toggleMenu(toggle);
+  console.log(toggle);
 });
 
-
-//foot_ware 
+//foot_ware
 
 const foot = document.querySelector(".foot-wear");
 const dataelem1 = document.querySelector(".mens");
 
-
 let footToggle = false;
 
 function togglefootMenu(bool) {
-    dataelem1.style.display = bool ? "block" : "none";
+  dataelem1.style.display = bool ? "flex" : "none";
 }
 
 foot.addEventListener("mouseover", (e) => {
-    footToggle = true;
-    togglefootMenu(footToggle);
+  footToggle = true;
+  togglefootMenu(footToggle);
 });
 foot.addEventListener("mouseleave", (e) => {
-    footToggle = false;
-    togglefootMenu(footToggle);
+  footToggle = false;
+  togglefootMenu(footToggle);
 });
-
-
 
 // kithchen
 
@@ -51,17 +46,17 @@ const dataelem2 = document.querySelector(".kitchenEle");
 let kitchenToggle = false;
 
 function togglekitchenMenu(bool) {
-    dataelem2.style.display = bool ? "block" : "none";
+  dataelem2.style.display = bool ? "flex" : "none";
 }
 
 kitchen.addEventListener("mouseover", (e) => {
-    kitchenToggle = true;
-    togglekitchenMenu(kitchenToggle);
+  kitchenToggle = true;
+  togglekitchenMenu(kitchenToggle);
 });
 kitchen.addEventListener("mouseleave", (e) => {
-    kitchenToggle = false;
+  kitchenToggle = false;
 
-    togglekitchenMenu(kitchenToggle);
+  togglekitchenMenu(kitchenToggle);
 });
 
 // health
@@ -71,17 +66,17 @@ const dataelem3 = document.querySelector(".health_contain");
 let healthToggle = false;
 
 function togglehealthMenu(bool) {
-    dataelem3.style.display = bool ? "block" : "none";
+  dataelem3.style.display = bool ? "flex" : "none";
 }
 
 health.addEventListener("mouseover", (e) => {
-    healthToggle = true;
-    togglehealthMenu(healthToggle);
+  healthToggle = true;
+  togglehealthMenu(healthToggle);
 });
 health.addEventListener("mouseleave", (e) => {
-    healthToggle = false;
+  healthToggle = false;
 
-    togglehealthMenu(healthToggle);
+  togglehealthMenu(healthToggle);
 });
 
 // offer
@@ -91,17 +86,17 @@ const dataelem4 = document.querySelector(".offerCon");
 let offerToggle = false;
 
 function toggleofferMenu(bool) {
-    dataelem4.style.display = bool ? "block" : "none";
+  dataelem4.style.display = bool ? "flex" : "none";
 }
 
 offer.addEventListener("mouseover", (e) => {
-    offerToggle = true;
-    toggleofferMenu(offerToggle);
+  offerToggle = true;
+  toggleofferMenu(offerToggle);
 });
 offer.addEventListener("mouseleave", (e) => {
-    offerToggle = false;
+  offerToggle = false;
 
-    toggleofferMenu(offerToggle);
+  toggleofferMenu(offerToggle);
 });
 
 // signin
@@ -109,18 +104,17 @@ offer.addEventListener("mouseleave", (e) => {
 const signin = document.querySelector(".signin");
 const dataelem5 = document.querySelector(".signup");
 
-
 let signToggle = false;
 
 function togglesignMenu(bool) {
-    dataelem5.style.display = bool ? "block" : "none";
+  dataelem5.style.display = bool ? "flex" : "none";
 }
 
 signin.addEventListener("mouseover", (e) => {
-    signToggle = true;
-    togglesignMenu(signToggle);
+  signToggle = true;
+  togglesignMenu(signToggle);
 });
 signin.addEventListener("mouseleave", (e) => {
-    signToggle = false;
-    togglesignMenu(signToggle);
+  signToggle = false;
+  togglesignMenu(signToggle);
 });
