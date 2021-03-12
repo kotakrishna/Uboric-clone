@@ -6,22 +6,20 @@
 @import "./login/login.css";
 @import "./../pages/footer.css";
 @import "./../pages/topbar.css";
-
-#bot{
-
+#bot {
     margin: 0;
     padding: 0;
 }
 
-#bot>section{
+#bot>section {
     min-height: 100vh;
     background: white;
 }
 
-.action{
+.action {
     position: fixed;
     bottom: 50px;
-    left:70px;
+    left: 70px;
     width: 50px;
     height: 50px;
     background: #f44336;
@@ -30,23 +28,23 @@
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.action span{
+.action span {
     position: relative;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     font-size: 2em;
     transition: 0.3s ease-in;
 }
 
-.action.active span{
-    transform: rotate(135deg); 
+.action.active span {
+    transform: rotate(135deg);
 }
 
-.action ul{
+.action ul {
     position: absolute;
     bottom: 5px;
     width: 0;
@@ -56,28 +54,30 @@
     border: 50%;
     opacity: 0;
     visibility: hidden;
-    transition: 0.3s ;
+    transition: 0.3s;
 }
-.action ul li{
+
+.action ul li {
     list-style: none;
     width: 10px;
     margin: 5px;
 }
 
-.action.active ul{
+.action.active ul {
     bottom: 65px;
     opacity: 1;
     visibility: visible;
-    transition: 0.3s ;
+    transition: 0.3s;
 }
 
-.action ul li{
+.action ul li {
     list-style: none;
     /* left: -10px; */
     /* display: flex; */
     justify-content: space-evenly;
     border-radius: 50%;
 }
+
 
 /* @import "./../pages/footer.css"; */
 
