@@ -47,5 +47,84 @@ h2 {
 
 .item-img {
   width: 200px;
+  height: 200px;
+  object-fit: contain;
   margin: auto;
+}
+
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 12px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 763px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .display-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .options {
+    width: 100%;
+    flex: 0 1 100%;
+  }
+  .search-box,
+  .brand-cont,
+  .product-size {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  html {
+    font-size: 12px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 763px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .display-flex {
+    flex-wrap: wrap-reverse;
+  }
+  .options {
+    width: 100%;
+    flex: 0 1 100%;
+  }
+  .search-box {
+    width: 100%;
+  }
+  .brand-cont,
+  .product-size,
+  .product-size,
+  .product-clouser {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 10px;
+  }
+  .display-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .product-size,
+  .product-clouser {
+    width: 45%;
+  }
 }
