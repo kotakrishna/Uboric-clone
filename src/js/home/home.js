@@ -54,12 +54,11 @@ function go() {
     window.location.href = "src/pages/search_page.html"
 }
 
-<<<<<<< HEAD
 function log() {
     window.location.href = "./src/login.html"
-=======
-function actiontoggle(){
-    var action=document.querySelector('.action');
-    action.classList.toggle('active')
->>>>>>> 206e30fdb6efb5753ccb7e32f3748b40e9327c09
+
+    function actiontoggle() {
+        var action = document.querySelector('.action');
+        action.classList.toggle('active')
+    }
 }
