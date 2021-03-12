@@ -16,5 +16,5 @@ function go_to(event) {
 
   console.log(w,x);
   localStorage.setItem("data", obj);
-  window.location.href = "product_display.html";
+  window.location.href = "./product_display.html";
 }
