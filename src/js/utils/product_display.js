@@ -14,6 +14,7 @@ async function importData(path) {
   var wt = await im;
   product = wt["default"][id];
   console.log(product);
+  showProduct(product);
 }
 
 switch (obj["tittle"]) {
@@ -55,11 +56,31 @@ switch (obj["tittle"]) {
 
 const imgElem = document.getElementById("img-section");
 const categoryElem = document.getElementById("category");
-const prodNameElem = document.getElementById("prod-name");
+const prodNameElemArr = document.querySelectorAll(".prod-name");
+const priceElemArr = document.querySelectorAll(".new-price");
+const descriptionElem = document.querySelector(".prod-description");
 
-console.log(product);
 function showProduct(data) {
   const imgStr = `
     <img src=${data.src} />
     `;
+
+  const catName = `${tittle}`;
+  const prodName = `${data.tittle}`;
+  const price = `₹${
+    `${data.tittle}`.split(".")[1] ? data.price : data.price + ".00"
+  }`;
+
+  const description = `${data.description}`;
+  prodNameElemArr.forEach((el) => {
+    el.innerHTML = prodName;
+  });
+  priceElemArr.forEach((el) => {
+    el.innerHTML = price;
+  });
+
+  imgElem.innerHTML = imgStr;
+  categoryElem.innerHTML = catName;
+
+  descriptionElem.innerHTML = description;
 }
