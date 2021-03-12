@@ -1,81 +1,85 @@
-.nav-bar{
+.nav-bar {
     width: 100%;
     position: fixed;
+    top: 0%;
     padding-bottom: 1%;
-    /* background-color: white; */
-    
+    background-color: white;
+    padding-left: 10px;
+    z-index: 100;
 }
-.nav-bar div>a{
-   color: black;
-   font-size: 18px;
+
+.nav-bar div>a {
+    color: black;
+    font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
     margin: 0.5%;
     margin-right: 0.5%;
-
 }
 
-
-.nav-bar a+img{
+.nav-bar a+img {
     margin-left: 7%;
     padding-top: 10px;
     width: 200px;
-
 }
 
-.nav-bar div>i{
+.nav-bar div>i {
     padding: 0.5%;
-   color: black;
+    color: black;
     font-size: 15px;
     margin-right: 0;
     font-weight: 300;
 }
-   .nav-bar>div{
-       float: left;
-       width: 10%;
-   }
 
-.login{
-    float: right;
-    margin: 2.5%;
-} 
-.addcart{
+.nav-bar>div {
+    float: left;
+    width: 10%;
+}
+
+.login {
     float: right;
     margin: 2.5%;
 }
-  
-.display-none{
+
+.addcart {
+    float: right;
+    margin: 2.5%;
+}
+
+.display-none {
     display: none;
-     width: 5%;
-     height: 3%;
+    width: 5%;
+    height: 3%;
     text-align: center;
 }
-.foot-wear{
+
+.foot-wear {
     color: grey;
 }
-.mens{
-    display:none
+
+.mens {
+    display: none
 }
-.mens{
-    width:200px ;
+
+.mens {
+    width: 200px;
     background-color: rgb(241, 232, 232);
     color: grey;
     margin: 10px;
 }
 
-.kitchen_container{
+.kitchen_container {
     color: grey;
 }
-.kitchenEle{
-    display:none;
-}
-.health_contain{
+
+.kitchenEle {
     display: none;
 }
-.offerCon{
-  display: none;
+
+.health_contain {
+    display: none;
 }
 
-
-
-   
+.offerCon {
+    display: none;
+}
