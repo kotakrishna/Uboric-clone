@@ -9,8 +9,8 @@ function createGrocery(data,key) {
     </p>
   </article>
   `;
-
+  
+  console.log("the grocery");
   return productStr;
 }
-
 export default createGrocery;

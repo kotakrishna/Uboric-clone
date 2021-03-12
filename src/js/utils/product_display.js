@@ -25,7 +25,7 @@ switch (obj["tittle"]) {
 
     break;
   case "Head Phones":
-    importData("../electronics/headPhones/data.js");
+    importData("../Electronics/HeadPhones/data.js");
     break;
 
   case "Buy Socks Products Online":
@@ -33,11 +33,11 @@ switch (obj["tittle"]) {
     break;
 
   case "Women's Footwear":
-    importData("../footwear/women/data.js");
+    importData("../Footwear/women/data.js");
     break;
 
   case "Men's Footwear":
-    importData("../footwear/men/data.js");
+    importData("./../Footwear/Men/data.js");
     break;
 
   case "Health & Personal Care":
@@ -49,11 +49,14 @@ switch (obj["tittle"]) {
     break;
 
   case "Kids's Footwear":
-    importData("../footwear/kids/data.js");
+    importData("../Footwear/Kids/data.js");
     break;
 
   case "SPICES":
     importData("../spices/data.js");
+    break;
+  case "GROCERY":
+    importData("./../grocery/data.js");
     break;
 
   default:
