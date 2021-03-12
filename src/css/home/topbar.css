@@ -1,159 +1,167 @@
-.nav-bar{
+.nav-bar {
     width: 100%;
     /* position: fixed; */
     padding-bottom: 1%;
     /* background-color: white; */
-    
 }
-.nav-bar div>a{
-   color: black;
-   font-size: 18px;
+
+.nav-bar div>a {
+    color: black;
+    font-size: 18px;
     font-family: sans-serif;
     text-decoration: none;
     margin: 0.5%;
     margin-right: 0.5%;
-
 }
 
-
-.nav-bar a+img{
+.nav-bar a+img {
     margin-left: 7%;
-    padding-top: 10px;
+    padding-top: 15px;
     width: 200px;
-
 }
 
-.nav-bar div>i{
+.nav-bar div>i {
     padding: 0.5%;
-   color: black;
+    color: black;
     font-size: 15px;
     margin-right: 0;
     font-weight: 300;
 }
-   .nav-bar>div{
-       float: left;
-       width: 10%;
-   }
 
-.login{
-    float: right;
-    margin: 2.5%;
-} 
-.addcart{
+.nav-bar>div {
+    float: left;
+    width: 10%;
+}
+
+.login {
     float: right;
     margin: 2.5%;
 }
-  
-.display-none{
+
+.addcart {
+    float: right;
+    margin: 2.5%;
+}
+
+.display-none {
     display: none;
-     width: 5%;
-     height: 3%;
+    width: 5%;
+    height: 3%;
     text-align: center;
 }
-.foot-wear{
+
+.foot-wear {
     color: grey;
 }
-.mens{
-    display:none
+
+.mens {
+    display: none
 }
-.mens{
-    width:200px ;
-    background:rgb(226, 226, 216);
+
+.mens {
+    width: 200px;
+    background: rgb(226, 226, 216);
     color: grey;
     margin: 10px;
 }
 
-.kitchen_container{
+.kitchen_container {
     color: grey;
 }
-.kitchenEle{
-    display:none;
-}
-.health_contain{
+
+.kitchenEle {
     display: none;
 }
-.offerCon{
-  display: none;
+
+.health_contain {
+    display: none;
 }
 
-.electronic a+a{
+.offerCon {
+    display: none;
+}
+
+.electronic a+a {
     width: 100%;
-    height:10%;
-    background:rgb(226, 226, 216);
+    height: 10%;
+    background: rgb(226, 226, 216);
     font-size: 20px;
     color: grey;
-
 }
-  .foot-wear>div{
-      height: 20vh;
-      width: 100%;
-      background:rgb(226, 226, 216);
-  }
-  
-  
-  
 
-  .kitchen_container>div{
+.foot-wear>div {
+    height: 20vh;
+    width: 100%;
+    background: rgb(226, 226, 216);
+}
 
-   height: 25vh;
-      width: 100%;
-      background:rgb(226, 226, 216);
-  }
-  .health>div{
+.kitchen_container>div {
+    height: 25vh;
+    width: 100%;
+    background: rgb(226, 226, 216);
+}
 
+.health>div {
     height: 15vh;
     width: 120%;
-    background:rgb(226, 226, 216);
+    background: rgb(226, 226, 216);
     color: gray;
-    padding:0% 15%;
-  }
-  .offer a+a{
+    padding: 0% 15%;
+}
+
+.offer a+a {
     width: 70%;
     height: 6vh;
-    background:rgb(226, 226, 216);
+    background: rgb(226, 226, 216);
     text-align: center;
     color: gray;
-    
-  }
-  
-  .anti:hover{
-      color: orange;
-  }
-   
-  .bathroom:hover{
-    color: orange;
 }
-.electronic>a:hover{
-    color: orange;
-}
-.foot-wear>a:hover{
+
+.anti:hover {
     color: orange;
 }
 
-.kitchen_container>a:hover{
+.bathroom:hover {
     color: orange;
 }
 
-.health>a:hover{
+.electronic>a:hover {
     color: orange;
 }
 
-.offer>a:hover{
+.foot-wear>a:hover {
     color: orange;
 }
-.spices:hover{
+
+.kitchen_container>a:hover {
     color: orange;
 }
-.grocery:hover{
+
+.health>a:hover {
     color: orange;
 }
-.socks:hover{
+
+.offer>a:hover {
     color: orange;
 }
-.position-relative{
+
+.spices:hover {
+    color: orange;
+}
+
+.grocery:hover {
+    color: orange;
+}
+
+.socks:hover {
+    color: orange;
+}
+
+.position-relative {
     position: relative;
 }
-.position-absolute{
+
+.position-absolute {
     position: absolute;
     left: 0;
     top: 40px;

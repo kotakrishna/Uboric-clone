@@ -94,7 +94,7 @@ var data = {
     // description:"Aroma Stainless Steel 304 Grade Towel Rack for Bathroom/Towel Stand/Towel Hanger/Bathroom Accessories (18 Inch- Chrome Black)",
     src:
       "https://www.uboric.com/wp-content/uploads/2019/12/bef2b18d267aea052d02f7d537f8ad26_result-400x400.jpg",
-  },
+  }
   // ,
   // 12:{
   //     Company_name:"Aroma",
