@@ -55,6 +55,9 @@ switch (obj["tittle"]) {
   case "SPICES":
     importData("../spices/data.js");
     break;
+  case "GROCERY":
+    importData("./../grocery/data.js");
+    break;
 
   default:
     break;
