@@ -59,6 +59,7 @@ const categoryElem = document.getElementById("category");
 const prodNameElemArr = document.querySelectorAll(".prod-name");
 const priceElemArr = document.querySelectorAll(".new-price");
 const descriptionElem = document.querySelector(".prod-description");
+const brandElem = document.querySelector(".brand");
 
 function showProduct(data) {
   const imgStr = `
@@ -68,7 +69,7 @@ function showProduct(data) {
   const catName = `${tittle}`;
   const prodName = `${data.tittle}`;
   const price = `₹${
-    `${data.tittle}`.split(".")[1] ? data.price : data.price + ".00"
+    `${data.price}`.split(".")[1] == "00" ? data.price : data.price + ".00"
   }`;
 
   const description = `${data.description}`;
@@ -81,6 +82,19 @@ function showProduct(data) {
 
   imgElem.innerHTML = imgStr;
   categoryElem.innerHTML = catName;
+  brandElem.innerHTML = data.company_name;
 
   descriptionElem.innerHTML = description;
 }
+
+const addToCartBtn = document.querySelector(".primary-btn");
+
+const handleAddToCart = (e) => {
+  const cartArr =
+    "cart" in localStorage ? JSON.parse(localStorage.getItem("cart")) : [];
+
+  localStorage.setItem("cart", JSON.stringify([...cartArr, product]));
+  window.location = "./cart.html";
+};
+
+addToCartBtn.addEventListener("click", handleAddToCart);

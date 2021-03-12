@@ -31,9 +31,14 @@ main > section:first-child {
   grid-template-columns: repeat(2, 1fr);
 }
 
+#img-section {
+  align-items: center;
+}
+
 #img-section > img {
   display: block;
   margin: auto;
+  width: 90%;
 }
 
 #details-section {
