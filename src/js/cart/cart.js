@@ -80,5 +80,11 @@ function findSubtotal(arr) {
 }
 
 function parseNum(price) {
-  return Number(price.split(".")[0].match(/\d/g).join(""));
+  return Number((price + "").split(".")[0].match(/\d/g).join(""));
 }
+
+const orderBtn = document.getElementById("order-now");
+
+orderBtn.addEventListener("click", (e) => {
+  alert("Your order is placed");
+});
