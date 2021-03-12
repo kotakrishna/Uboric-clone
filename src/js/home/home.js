@@ -47,14 +47,18 @@ search.onchange = go
 
 function go() {
     console.log(search.value);
-    localStorage.setItem("search",search.value)
-    // window.location.href = "./search_page.html"
-    // window.location.href = "./../../pages/search_page.html"
-    // window.location.href = "src/pages/search_page.html"
+    localStorage.setItem("search", search.value)
+        // window.location.href = "./search_page.html"
+        // window.location.href = "./../../pages/search_page.html"
+        // window.location.href = "src/pages/search_page.html"
     window.location.href = "src/pages/search_page.html"
 }
 
-function actiontoggle(){
-    var action=document.querySelector('.action');
-    action.classList.toggle('active')
+function log() {
+    window.location.href = "./src/login.html"
+
+    function actiontoggle() {
+        var action = document.querySelector('.action');
+        action.classList.toggle('active')
+    }
 }
