@@ -83,47 +83,53 @@
 .offerCon {
     display: none;
 }
-.signup{
+
+.signup {
     height: 500px;
     left: -200px;
     width: 300px;
     transition: all;
     background-color: whitesmoke;
-    
 }
-.signup h1{
+
+.signup h1 {
     padding: 8%;
     font-size: 40px;
     color: rgb(42, 42, 92);
 }
-.signup p{
-text-align: center;
 
+.signup p {
+    text-align: center;
 }
-.signup label{
-padding: 8%;
-font-size: 20px;
-color: gray;
 
-}
-.signup input{
+.signup label {
+    padding: 8%;
     font-size: 20px;
-    padding:1.2% 4%;
-    margin:20px 8%;
+    color: gray;
 }
-.signup button{
-  text-align: center;
-  width: 280px;
-  background-color: orange;
-  font-size: 21px;
-  margin: 20px 8%;
+
+.signup input {
+    font-size: 20px;
+    padding: 1.2% 4%;
+    margin: 20px 8%;
 }
-.signup{
-  display: none;
+
+.signup button {
+    text-align: center;
+    width: 280px;
+    background-color: orange;
+    font-size: 21px;
+    margin: 20px 8%;
 }
-.position-relative{
-position: relative;
+
+.signup {
+    display: none;
 }
-.position-absolute{
-position: absolute;
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
 }

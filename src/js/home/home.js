@@ -57,8 +57,10 @@ function go() {
 function log() {
     window.location.href = "./src/login.html"
 
-    function actiontoggle() {
-        var action = document.querySelector('.action');
-        action.classList.toggle('active')
-    }
+
+}
+
+function actiontoggle() {
+    var action = document.querySelector('.action');
+    action.classList.toggle('active')
 }
