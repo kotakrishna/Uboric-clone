@@ -85,7 +85,7 @@ health.addEventListener("mouseleave", (e) => {
 });
 
 // offer
-const offer = document.querySelector(".offer");
+const offer = document.querySelector(".offer-con");
 const dataelem4 = document.querySelector(".offerCon");
 
 let offerToggle = false;
@@ -104,3 +104,23 @@ offer.addEventListener("mouseleave", (e) => {
     toggleofferMenu(offerToggle);
 });
 
+// signin
+
+const signin = document.querySelector(".signin");
+const dataelem5 = document.querySelector(".signup");
+
+
+let signToggle = false;
+
+function togglesignMenu(bool) {
+    dataelem5.style.display = bool ? "block" : "none";
+}
+
+signin.addEventListener("mouseover", (e) => {
+    signToggle = true;
+    togglesignMenu(signToggle);
+});
+signin.addEventListener("mouseleave", (e) => {
+    signToggle = false;
+    togglesignMenu(signToggle);
+});
