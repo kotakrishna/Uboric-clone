@@ -1,4 +1,4 @@
-{ // Registration
+ // Registration
 
     var ph = document.getElementById("phone")
     var mail = document.getElementById("email")
@@ -11,12 +11,12 @@
         localStorage.setItem("ph1", ph.value)
         localStorage.setItem("mail", mail.value)
         localStorage.setItem("ph2", ph2.value)
-        alert("You have been registered")
-            
-    }
-}
 
-{
+        alert(`You have been registered as ${mail.value}`)
+    }
+
+
+
     let user = document.getElementById("user")
     let pass = document.getElementById("pswd")
     let btnlog = document.getElementById("btnlog")
@@ -35,4 +35,3 @@
 
     }
 
-}
