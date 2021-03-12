@@ -14,7 +14,7 @@ function go_to(event) {
   };
   obj = JSON.stringify(obj);
 
-  console.log(x);
+  console.log(w,x);
   localStorage.setItem("data", obj);
   window.location.href = "product_display.html";
 }
