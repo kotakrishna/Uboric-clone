@@ -7,8 +7,10 @@ h2 {
 
 .links > a {
   display: inline-block;
+  cursor: pointer;
   color: var(--primary-color);
   margin: 10px;
+  text-decoration: none;
 }
 
 .products-cont {

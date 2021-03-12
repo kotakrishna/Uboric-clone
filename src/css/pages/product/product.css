@@ -7,6 +7,7 @@
 :root {
   --family: Lato, sans-serif;
   --old-price-color: #666;
+  --button-background: #ffce61;
 }
 
 .display-flex {
@@ -156,7 +157,7 @@ main > section:first-child {
 
 .add-in-cart {
   border: 2px solid;
-  background-color: #ffce61;
+  background-color: var(--button-background);
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;
   flex-grow: 1;
