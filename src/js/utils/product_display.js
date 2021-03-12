@@ -17,13 +17,15 @@ async function importData(path) {
   showProduct(product);
 }
 
+console.log(product);
+
 switch (obj["tittle"]) {
   case "Bathroom Accessories":
     importData("../bathrooms/data.js");
 
     break;
   case "Head Phones":
-    importData("../Electronics/HeadPhones/data.js");
+    importData("../electronics/headPhones/data.js");
     break;
 
   case "Buy Socks Products Online":
@@ -31,11 +33,11 @@ switch (obj["tittle"]) {
     break;
 
   case "Women's Footwear":
-    importData("../Footwear/women/data.js");
+    importData("../footwear/women/data.js");
     break;
 
   case "Men's Footwear":
-    importData("../Footwear/men/data.js");
+    importData("../footwear/men/data.js");
     break;
 
   case "Health & Personal Care":
@@ -43,15 +45,15 @@ switch (obj["tittle"]) {
     break;
 
   case "Kitchen-ware":
-    importData("../kitchen_ware/kitchen.js");
+    importData("../kitchen_ware/data.js");
     break;
 
   case "Kids's Footwear":
-    importData("./../Footwear/Kids/data.js");
+    importData("../footwear/kids/data.js");
     break;
 
   case "SPICES":
-    importData("./../spices/data.js");
+    importData("../spices/data.js");
     break;
 
   default:
