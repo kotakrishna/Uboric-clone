@@ -1,90 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Add to Cart</title>
     <link rel="stylesheet" href="./../css/pages/cart/cart.css" />
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./../css/index.css" />
+</head>
+
+<body>
     <main>
-      <h2>Cart</h2>
+        <h2>Cart</h2>
 
-      <section class="links">
-        <a href="./../../index.html">Home</a> >
-        <a href="#">Cart</a>
-      </section>
+        <section class="links">
+            <a href="./../../index.html">Home</a> >
+            <a href="#">Cart</a>
+        </section>
 
-      <section class="display-flex">
-        <aside class="prods-info">
-          <table>
-            <thead>
-              <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <div class="display-flex product-details">
-                    <button>X</button>
-                    <div class="prod-img">
-                      <img
-                        src="https://www.uboric.com/wp-content/uploads/2020/11/vasant-chat-masala-jar-500-gm-106487776-v2wll-400x421.png"
-                        alt="name "
-                      />
-                    </div>
-                    <span class="pron-name">Vasant Chat Masala</span>
-                  </div>
-                </td>
-                <td class="price">₹269.00</td>
-                <td>
-                  <div class="quantity display-grid">
-                    <button class="decrease">-</button>
-                    <span>2</span>
-                    <button class="increase">+</button>
-                  </div>
-                </td>
-                <td class="subtotal">₹269.00</td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="display-flex product-details">
-                    <button>X</button>
-                    <div class="prod-img">
-                      <img
-                        src="https://www.uboric.com/wp-content/uploads/2020/11/vasant-chat-masala-jar-500-gm-106487776-v2wll-400x421.png"
-                        alt="name "
-                      />
-                    </div>
-                    <span class="pron-name">Vasant Chat Masala</span>
-                  </div>
-                </td>
-                <td class="price">₹269.00</td>
-                <td>
-                  <div class="quantity display-grid">
-                    <button class="decrease">-</button>
-                    <span>2</span>
-                    <button class="increase">+</button>
-                  </div>
-                </td>
-                <td class="subtotal">₹269.00</td>
-              </tr>
-            </tbody>
-          </table>
-        </aside>
-        <aside class="cart-info">
-          <h2>Cart totals</h2>
-          <p class="display-flex"><span>Subtotal</span> <span>₹538.00</span></p>
+        <section class="display-flex">
+            <aside class="prods-info">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="display-flex product-details">
+                                    <button>X</button>
+                                    <div class="prod-img">
+                                        <img src="https://www.uboric.com/wp-content/uploads/2020/11/vasant-chat-masala-jar-500-gm-106487776-v2wll-400x421.png" alt="name " />
+                                    </div>
+                                    <span class="pron-name">Vasant Chat Masala</span>
+                                </div>
+                            </td>
+                            <td class="price">₹269.00</td>
+                            <td>
+                                <div class="quantity display-grid">
+                                    <button class="decrease">-</button>
+                                    <span>2</span>
+                                    <button class="increase">+</button>
+                                </div>
+                            </td>
+                            <td class="subtotal">₹269.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="display-flex product-details">
+                                    <button>X</button>
+                                    <div class="prod-img">
+                                        <img src="https://www.uboric.com/wp-content/uploads/2020/11/vasant-chat-masala-jar-500-gm-106487776-v2wll-400x421.png" alt="name " />
+                                    </div>
+                                    <span class="pron-name">Vasant Chat Masala</span>
+                                </div>
+                            </td>
+                            <td class="price">₹269.00</td>
+                            <td>
+                                <div class="quantity display-grid">
+                                    <button class="decrease">-</button>
+                                    <span>2</span>
+                                    <button class="increase">+</button>
+                                </div>
+                            </td>
+                            <td class="subtotal">₹269.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </aside>
+            <aside class="cart-info">
+                <h2>Cart totals</h2>
+                <p class="display-flex"><span>Subtotal</span> <span>₹538.00</span></p>
 
-          <button>Proceed To Checkout</button>
-        </aside>
-      </section>
+                <button>Proceed To Checkout</button>
+            </aside>
+        </section>
     </main>
+
     <script src="./../js/cart/cart.js"></script>
-  </body>
+</body>
+
 </html>
