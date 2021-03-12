@@ -1,13 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1 id="h1">great</h1>
+    <script
+      src="https://kit.fontawesome.com/60217b89b5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./../../src/css/pages/product/product.css" />
+  </head>
+  <body>
+    <main>
+      <section class="display-grid">
+        <aside id="img-section">
+          <img
+            src="https://www.uboric.com/wp-content/uploads/2020/11/vasant-chat-masala-jar-500-gm-106487776-v2wll.png"
+            alt="Img"
+          />
+        </aside>
+        <aside id="details-section">
+          <div class="nav-path display-flex">
+            <a href="./../home.html">Home</a> <span>></span>
+            <a href="#">Products</a>
+            <span>></span>
+            <a href="#" id="category">GROCERY</a>
+            <span>></span>
+            <span id="prod-name">Vasant Chat Masala</span>
+          </div>
+
+          <div class="product-info">
+            <h4>Vasant Chat Masala</h4>
+            <p class="price">
+              <span class="line-through"></span>
+              <span class="old-price">₹337.00</span>
+              <span class="new-price">₹337.00</span>
+              <span>(Inclusive of all taxes)</span>
+            </p>
+          </div>
+
+          <div class="guarantee-box">
+            <img
+              src="https://www.uboric.com/wp-content/uploads/2020/12/guarantee.svg"
+              alt="100% Guarantee"
+            />
+          </div>
+
+          <article class="facility-box display-grid">
+            <div>
+              <p>
+                <i class="fas fa-money-bill-alt"></i>
+              </p>
+              <p>7days Return</p>
+            </div>
+
+            <div>
+              <p>
+                <i class="fas fa-headphones"></i>
+              </p>
+              <p>24/7 Online<br />Support</p>
+            </div>
+
+            <div>
+              <p>
+                <i class="fa fa-shopping-bag"></i>
+              </p>
+              <p>Fast Delivery in<br />India</p>
+            </div>
+
+            <div>
+              <p>
+                <i class="fa fa-credit-card"></i>
+              </p>
+              <p>Secure<br />Payment</p>
+            </div>
+          </article>
+
+          <h2>HURRY! ONLY <span>100</span> LEFT IN STOCK.</h2>
+
+          <div class="bar"></div>
+          <p class="stock-status"><i class="far fa-smile"></i>100 in stock</p>
+
+          <article class="add-to-cart display-flex">
+            <input class="product-count" type="number" min="1" value="1" />
+            <button class="primary-btn add-in-cart">ADD TO CART</button>
+          </article>
+
+          <!-- <article>
+            <button class="primary-btn add-in-cart">SEND ENQUIRY</button>
+          </article> -->
+        </aside>
+      </section>
+      <section></section>
+      <section></section>
+    </main>
+
     <script src="../js/utils/product_display.js"></script>
-</body>
+  </body>
 </html>
