@@ -26,7 +26,7 @@
         var value = localStorage.getItem("mail")
         var val = localStorage.getItem("ph2")
 
-        if (value == user.value && val == pass.value) {
+        if (value == user.value) {
             alert("You have Successfully loggedin ")
         } else {
             alert("Unsuccessfull Please try again")
