@@ -1,25 +1,25 @@
 .options {
   flex-basis: 30%;
-  padding: 50px 0 0 25px;
+  padding: 3rem 0 0 1.5rem;
 }
 
 .search-box input,
 .brands-cont button,
 .product-size button,
 .product-clouser button {
-  font-size: 20px;
-  padding: 20px;
+  font-size: 1.25rem;
+  padding: 1.25rem;
   width: 95%;
-  border-radius: 2px;
+  border-radius: 0.125rem;
   cursor: auto;
 }
 
 .brands-cont button,
 .product-size button,
 .product-clouser button {
-  font-size: 20px;
-  padding: 13px;
-  margin: 20px 0;
+  font-size: 1.25rem;
+  padding: 0.8125rem;
+  margin: 1.25rem 0;
   text-align: left;
   color: var(--old-price-color);
 }
@@ -49,7 +49,7 @@ input {
 .footwear-cat > div {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 0.625rem 0;
   color: rgb(80, 79, 79);
 }
 
@@ -59,19 +59,19 @@ input {
 }
 
 input[type="checkbox"] {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   border-radius: none;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 }
 
 #show-more {
   text-align: center;
-  font-size: 18px;
+  font-size: 1.025rem;
   color: rgb(80, 79, 79);
 }
 
 hr {
   width: 95%;
-  margin: 10px 0;
+  margin: 0.625rem 0;
 }

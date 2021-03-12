@@ -13,190 +13,204 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./../css/index.css" />
+    <script src="https://kit.fontawesome.com/60217b89b5.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./../../src/css/pages/product/product.css" /> -->
-    <link rel="stylesheet" href="./topbar.css">
-    <link rel="stylesheet" href="../css/pages/product/product.css">
+    <link rel="stylesheet" href="./topbar.css" />
+    <link rel="stylesheet" href="../css/pages/product/product.css" />
 </head>
 
 <body>
     <header>
-        <div class="main-container">
-            <div class="header">
-                <div class="nav-bar topnav">
-                    <a href="./../../index.html"><img src="https://i.ibb.co/HqYs9wH/uboric.png" alt="" /></a>
+        <section class="top-nav display-flex">
+            <div class="uboric-logo">
+                <a href="./../../index.html"><img src="https://www.uboric.com/wp-content/uploads/2018/08/uboric.svg" alt="Logo" /></a>
+            </div>
 
-                    <input id="input" style="margin: 0% 10%; font-size: 30px; width: 40%" type="search" />
-                    <a href=""><i style="margin: 0% -10%; font-size: 25px"class="fa fa-search"></i ></a>
+            <div class="query-box display-flex">
+                <input id="input" type="search" placeholder="What are you looking for" />
+                <a href="#"><i class="fa fa-search"></i></a>
+            </div>
 
-                    <a class="addcart" href="./cart.html"><img src="https://i.ibb.co/F6rwTHM/addcart.png" alt="" /></a>
-                    <a class="login" href="./../login.html"><img src="https://i.ibb.co/khJ73gc/laogin.png" alt="" /></a>
-                    <div></div>
+            <div class="display-flex">
+                <section class="signin position-relative">
+                    <a class="login" href="./src/login.html"><i class="fa fa-user-circle"></i>
+            </a>
+                    <div class="signup display-none position-absolute">
+                        <h1>Sign in</h1>
+                        <p>CREATE AN ACCOUNT</p>
 
-                    <div style="clear: both"></div>
+                        <label>username or email <i style="color: orange">*</i></label>
+                        <input type="email" />
+                        <label>password <i style="color: orange"> *</i></label
+              ><br />
+              <input type="password" /><br />
+              <p>LOST YOUR PASSWORD</p>
+              <br />
+              <button>LOGIN</button>
+            </div>
+          </section>
+          <a class="addcart" href=""><i class="fa fa-cart-plus"></i> </a>
+        </div>
+      </section>
 
-                    <div>
-                        <a class="anti" href="">Anti Puncture Liquid</a>
-                    </div>
-                    <div>
-                        <a class="bathroom" href="./bathroom.html">Bathroom Accessories</a>
-                    </div>
+      <section class="nav-bar topnav display-flex">
+        <div>
+          <a class="anti" href="#">Anti Puncture Liquid</a>
+        </div>
+        <div>
+          <a class="bathroom" href="./src/pages/bathroom.html"
+            >Bathroom Accessories</a
+          >
+        </div>
 
-                    <div class="electronic position-relative">
-                        <a class="headphone" href="">Electronics <i class="fa fa-chevron-down"></i></a>
+        <div class="electronic position-relative">
+          <a class="headphone" href="./src/pages/headphone.html"
+            >Electronics <i class="fa fa-chevron-down"></i
+          ></a>
+          <div class="display-none position-absolute headphone-con sub-cat">
+            <a href="./src/pages/headphone.html">Headphones</a>
+          </div>
+        </div>
 
-                        <a href="./headphone.html">
-                            <p class="display-none position-absolute">Headphones</p>
-                        </a>
-                    </div>
+        <div>
+          <a class="socks" href="./src/pages/socks.html">Socks</a>
+        </div>
 
-                    <div>
-                        <a class="socks" href="./socks.html">Socks</a>
-                    </div>
+        <div class="foot-wear position-relative">
+          <a href="">Foot Wear<i class="fa fa-chevron-down"></i></a>
+          <div class="mens position-absolute sub-cat display-flex">
+            <a href="./src/pages/men-footwear.html">MENS</a>
+            <a href="./src/pages/women-footwear.html">WOMEN</a>
+            <a href="./src/pages/kids-footwear.html">KIDS</a>
+          </div>
+        </div>
 
-                    <div class="foot-wear position-relative">
-                        <a href="./footwear.html">Foot Wear<i class="fa fa-chevron-down"></i></a>
-                        <div style="margin-top: -21px;" class="mens position-absolute">
-                            <a href="./men-footwear.html">
-                                <p style="font-size: 20px;margin-top: 2px;color: gray;padding: 0px 17px;">MENS<i class="fa fa-chevron-down"></i></p>
-                            </a>
-                            <a href="./women-footwear.html">
-                                <p style="font-size: 20px;margin-top: 2px; color: gray; padding: 0px 17px;">WOMEN <i class="fa fa-chevron-down"></i></p>
-                            </a>
-                            <a href="./kids-footwear.html">
-                                <p style="font-size: 20px;margin-top: 2px;color: gray; padding: 0px 17px;">KIDS<i class="fa fa-chevron-down"></i></p>
-                            </a>
-                        </div>
-                    </div>
+        <div class="kitchen_container position-relative">
+          <a href="./src/pages/kitchen-ware.html"
+            >Kitchen-Ware<i class="fa fa-chevron-down"></i
+          ></a>
+          <div class="kitchenEle position-absolute sub-cat">
+            <a href="./src/pages/kitchen-ware.html"> Air Tight Container </a>
+            <a href="./src/pages/kitchen-ware.html">Kitchen Tools</a>
+            <a href="./src/pages/kitchen-ware.html">Gas Lighter</a>
+          </div>
+        </div>
 
-                    <div class="kitchen_container position-relative">
-
-                        <a href="./kitchen-ware.html">Kitchen-Ware<i class="fa fa-chevron-down"></i></a>
-                        <div style="margin-top: -21px;" class="kitchenEle position-absolute ;">
-
-                            <a href="">
-                                <p style="font-size: 20px;margin-top: -10px; color: gray; padding: 0px 17px;"> Air Tight Container</p>
-                            </a><br />
-                            <a href="">
-                                <p style=" font-size: 20px; margin-top: -10px; color: gray;   padding: 0px 17px;  "> Kitchen Tools</p>
-                            </a><br />
-                            <a href="">
-                                <p style=" font-size: 20px; margin-top: -10px; color: gray; padding: 0px 17px; "> Gas Lighter </p>
-                            </a><br />
-                        </div>
-                    </div>
-
-                    <div class="health position-relative">
-                        <a href="">Personal&Health Care<i class="fa fa-chevron-down"></i></a>
-                        <div class="health_contain position-absolute">
-                            <a href="./health-care.html">
-                                <p style="font-size: 20px;margin-top: 5px; color: grey;"></p> Health Care</a><br />
-                            <a href="">
-                                <p style="font-size: 20px;margin-top: 5px; color: grey;"></p>Personal Care</a><br />
-                        </div>
-                    </div>
-                    <div class="offer-con position-relative">
-                        <a href="">Offer zone<i class="fa fa-chevron-down"></i></a>
-                        <a class="offerCon position-absolute" href="">
-                            <p style="font-size: 20px;"></p>50% off</a><br />
-                    </div>
-                    <div>
-                        <a class="spices" href="./spice.html">Spices<i class="fa fa-chevron-down"></i></a>
-                    </div>
-                    <div>
-                        <a class="grocery" href="./grocery.html">Grocery<i class="fa fa-chevron-down"></i></a>
-                    </div>
-                </div>
+        <div class="health position-relative">
+          <a href="./src/pages/health-care.html"
+            >Personal & Health Care<i class="fa fa-chevron-down"></i
+          ></a>
+          <div class="health_contain position-absolute sub-cat">
+            <a href="./src/pages/health-care.html">Health Care </a>
+            <a href="./src/pages/health-care.html">Personal Care </a>
+          </div>
+        </div>
+        <div class="offer-con position-relative">
+          <a href="">Offer zone<i class="fa fa-chevron-down"></i></a>
+          <a class="offerCon position-absolute sub-cat" href="#"> 50% off</a>
+        </div>
+        <div>
+          <a class="spices" href="./src/pages/spice.html">Spices</a>
+        </div>
+        <div>
+          <a class="grocery" href="./src/pages/grocery.html">Grocery</a>
+        </div>
+      </section>
     </header>
+
     <main>
-        <section class="display-grid">
-            <aside id="img-section" class="display-flex"></aside>
-            <aside id="details-section">
-                <div class="nav-path">
-                    <a href="./../home.html">Home</a> <span>></span>
-                    <a href="#">Products</a>
-                    <span>></span>
-                    <a href="#" id="category"></a>
-                    <span>></span>
-                    <span class="prod-name">Vasant Chat Masala</span>
-                </div>
+      <section class="display-grid">
+        <aside id="img-section" class="display-flex"></aside>
+        <aside id="details-section">
+          <div class="nav-path">
+            <a href="./../home.html">Home</a> <span>></span>
+            <a href="#">Products</a>
+            <span>></span>
+            <a href="#" id="category"></a>
+            <span>></span>
+            <span class="prod-name">Vasant Chat Masala</span>
+          </div>
 
-                <div class="product-info">
-                    <h4 class="prod-name">Vasant Chat Masala</h4>
-                    <p class="price">
-                        <span class="line-through"></span>
-                        <span class="old-price">₹1900.00</span>
-                        <span class="new-price">₹337.00</span>
-                        <span>(Inclusive of all taxes)</span>
-                    </p>
-                </div>
+          <div class="product-info">
+            <h4 class="prod-name">Vasant Chat Masala</h4>
+            <p class="price">
+              <span class="line-through"></span>
+              <span class="old-price">₹1900.00</span>
+              <span class="new-price">₹337.00</span>
+              <span>(Inclusive of all taxes)</span>
+            </p>
+          </div>
 
-                <div class="guarantee-box">
-                    <img src="https://www.uboric.com/wp-content/uploads/2020/12/guarantee.svg" alt="100% Guarantee" />
-                </div>
+          <div class="guarantee-box">
+            <img
+              src="https://www.uboric.com/wp-content/uploads/2020/12/guarantee.svg"
+              alt="100% Guarantee"
+            />
+          </div>
 
-                <article class="facility-box display-grid">
-                    <div>
-                        <p>
-                            <i class="fas fa-money-bill-alt"></i>
-                        </p>
-                        <p>7days Return</p>
-                    </div>
+          <article class="facility-box display-grid">
+            <div>
+              <p>
+                <i class="fas fa-money-bill-alt"></i>
+              </p>
+              <p>7days Return</p>
+            </div>
 
-                    <div>
-                        <p>
-                            <i class="fas fa-headphones"></i>
-                        </p>
-                        <p>24/7 Online<br />Support</p>
-                    </div>
+            <div>
+              <p>
+                <i class="fas fa-headphones"></i>
+              </p>
+              <p>24/7 Online<br />Support</p>
+            </div>
 
-                    <div>
-                        <p>
-                            <i class="fa fa-shopping-bag"></i>
-                        </p>
-                        <p>Fast Delivery in<br />India</p>
-                    </div>
+            <div>
+              <p>
+                <i class="fa fa-shopping-bag"></i>
+              </p>
+              <p>Fast Delivery in<br />India</p>
+            </div>
 
-                    <div>
-                        <p>
-                            <i class="fa fa-credit-card"></i>
-                        </p>
-                        <p>Secure<br />Payment</p>
-                    </div>
-                </article>
+            <div>
+              <p>
+                <i class="fa fa-credit-card"></i>
+              </p>
+              <p>Secure<br />Payment</p>
+            </div>
+          </article>
 
-                <h2>HURRY! ONLY <span>100</span> LEFT IN STOCK.</h2>
+          <h2>HURRY! ONLY <span>100</span> LEFT IN STOCK.</h2>
 
-                <div class="bar"></div>
-                <p class="stock-status"><i class="far fa-smile"></i>100 in stock</p>
+          <div class="bar"></div>
+          <p class="stock-status"><i class="far fa-smile"></i>100 in stock</p>
 
-                <article class="add-to-cart display-flex">
-                    <input class="product-count" type="number" min="1" value="1" />
-                    <button class="primary-btn add-in-cart">ADD TO CART</button>
-                </article>
+          <article class="add-to-cart display-flex">
+            <input class="product-count" type="number" min="1" value="1" />
+            <button class="primary-btn add-in-cart">ADD TO CART</button>
+          </article>
 
-                <!-- <article>
+          <!-- <article>
             <button class="primary-btn add-in-cart">SEND ENQUIRY</button>
           </article> -->
-            </aside>
-        </section>
-        <section class="extra-details">
-            <h2 class="description">Description</h2>
-            <p class="prod-name"></p>
+        </aside>
+      </section>
+      <section class="extra-details">
+        <h2 class="description">Description</h2>
+        <p class="prod-name"></p>
 
-            <p class="prod-description"></p>
+        <p class="prod-description"></p>
 
-            <table>
-                <tr class="row">
-                    <td>Price</td>
-                    <td class="new-price"></td>
-                </tr>
-                <tr class="row">
-                    <td>Brand Name</td>
-                    <td class="brand">Amora</td>
-                </tr>
-            </table>
-        </section>
-        <section></section>
+        <table>
+          <tr class="row">
+            <td>Price</td>
+            <td class="new-price"></td>
+          </tr>
+          <tr class="row">
+            <td>Brand Name</td>
+            <td class="brand">Amora</td>
+          </tr>
+        </table>
+      </section>
+      <section></section>
     </main>
     <footer>
 
