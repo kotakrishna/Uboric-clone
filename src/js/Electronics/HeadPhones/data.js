@@ -23,7 +23,7 @@ var data = {
     price: "799.00",
     description:
       "QOR9 CROWN GREY Magnet Wireless Bluetooth Earphone with Mic Magnetic Bluetooth Headphones with mic Stereo Headsets Hands-Free with Microphone and Neckband for Android and Apple Smartphones (Standard)",
-    src: "https://www.uboric.com/wp-content/uploads/2020/10/A-2001_result.jpg",
+    src: "https://www.uboric.com/wp-content/uploads/2021/02/51I6oH4f4L._SL1080_.jpg",
   },
   3: {
     company_name: "QOR9",
