@@ -176,6 +176,7 @@ input::placeholder {
 .signup {
   left: -17vw;
   width: 300px;
+  top: 30px;
   /* transition: all; */
   background-color: #fff;
   flex-direction: column;
@@ -215,8 +216,4 @@ input::placeholder {
   border-radius: var(--round-radius);
   background-color: var(--button-background);
   font-size: 21px;
-}
-
-.signup {
-  display: none;
 }

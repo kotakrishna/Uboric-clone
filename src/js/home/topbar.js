@@ -1,21 +1,27 @@
 const electronicCon = document.querySelector(".electronic");
 const dataElem = document.querySelector(".display-none");
+const navBar = document.querySelector(".nav-bar");
 
-let toggle = false;
+let toggleHeadphone = false;
 
-function toggleMenu(bool) {
-  dataElem.style.display = bool ? "flex" : "none";
+function toggleItem(bool, target) {
+  target.style.display = bool ? "flex" : "none";
 }
 
 electronicCon.addEventListener("mouseover", (e) => {
-  toggle = true;
-  console.log(toggle);
-  toggleMenu(toggle);
+  let target = e.target;
+  if (target.className === "headphone") {
+    toggleHeadphone = true;
+    const element = target.nextElementSibling;
+
+    toggleItem(toggleHeadphone, element);
+  }
 });
+
 electronicCon.addEventListener("mouseleave", (e) => {
-  toggle = false;
-  toggleMenu(toggle);
-  console.log(toggle);
+  const element = document.querySelector(".headphone-con");
+  toggleHeadphone = false;
+  toggleItem(toggleHeadphone, element);
 });
 
 //foot_ware
