@@ -11,6 +11,7 @@
         localStorage.setItem("ph1", ph.value)
         localStorage.setItem("mail", mail.value)
         localStorage.setItem("ph2", ph2.value)
+
         alert(`You have been registered as ${mail.value}`)
     }
 
