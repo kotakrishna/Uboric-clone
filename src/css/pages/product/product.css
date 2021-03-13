@@ -1,4 +1,5 @@
 @import "./../../reset.css";
+@import "./../../home/topbar.css";
 
 * {
   box-sizing: border-box;
@@ -24,12 +25,9 @@ main {
   padding: 30px 0;
 }
 
-main > * {
-  width: 100%;
-}
-
 main > section:first-child {
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 10rem;
 }
 
 #img-section {
@@ -111,7 +109,7 @@ main > section:first-child {
 
 .facility-box i {
   color: #1e516c;
-  font-size: 30px;
+  font-size: 30px !important;
 }
 
 .facility-box p {

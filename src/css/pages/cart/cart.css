@@ -1,12 +1,8 @@
 @import "./../../reset.css";
 @import "./../aside-product.css";
+@import "./../../home/topbar.css";
 
 :root {
-  --family: Lato, sans-serif;
-  --old-price-color: #666;
-  --round-radius: 3px;
-  --primary-color: #1e516c;
-  --button-background: #ffce61;
   --cart-background: #fafafa;
 }
 
