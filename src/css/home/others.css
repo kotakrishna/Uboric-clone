@@ -23,3 +23,120 @@
     grid-template-areas: "sp1 sp2 sp3 sp4 sp5";
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 1300px) {
+    #home-top {
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas: "lo mo ro";
+        max-height: 300px;
+    }
+    #home-top>#mid-one>img {
+        max-width: 150px;
+        max-height: 100px;
+    }
+    #mid-one {
+        max-height: 290px;
+    }
+    #left-one>button {
+        /* position: relative; */
+        top: 56%;
+        left: 10%;
+    }
+    #right-one>button {
+        /* position: relative; */
+        top: 56%;
+        left: 7%;
+    }
+    .logo {
+        width: 100%;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 20%;
+        margin-bottom: 20px;
+    }
+    .foot {
+        min-width: 300px;
+        height: 200px;
+        box-shadow: 0 4px 8px 0 rgba(25, 28, 37, 0.2), 0 6px 20px 0 rgba(28, 26, 44, 0.596);
+    }
+    #extra-prod {
+        margin-top: 10px;
+        gap: 5px;
+        min-width: 50%;
+        min-height: 200px;
+        grid-template-columns: repeat(5, minmax(15%, 1fr));
+        grid-template-areas: "sp1 sp2 sp3 sp4 sp5";
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .sizes {
+        max-width: 175px;
+        max-height: 200px;
+        box-shadow: 0 4px 8px 0 rgba(14, 16, 20, 0.2), 0 6px 20px 0 rgba(15, 14, 20, 0.596);
+    }
+    .facilities {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        align-items: center;
+        margin-left: 5%;
+        /* width: 80%; */
+        box-shadow: 0 4px 8px 0 rgba(17, 33, 78, 0.2), 0 6px 20px 0 rgba(32, 28, 70, 0.596);
+        margin-right: 5%;
+    }
+    .facilities>img {
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #others {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 80%;
+        gap: 0;
+        height: 33vh;
+        grid-template: "mf wf" "kf kf";
+        margin: auto;
+    }
+    /* .kf>img {
+        margin-left: 25%;
+    } */
+    .foot {
+        width: 100%;
+        height: 16vh;
+    }
+    #extra-prod {
+        margin-top: 10px;
+        gap: 10px;
+        width: 100%;
+        height: 50vh;
+        /* min-height: 200px; */
+        /* grid-template-columns: repeat(5, minmax(15%, 1fr)); */
+        grid-template: "sp1  sp2  sp3" "sp4 - sp5";
+        /* margin-bottom: 20px; */
+    }
+    .sizes {
+        max-width: 275px;
+        height: 390px;
+        box-shadow: 0 4px 8px 0 rgba(22, 24, 32, 0.2), 0 6px 20px 0 rgba(21, 19, 36, 0.596);
+    }
+    .sp1 {
+        grid-area: sp1;
+    }
+    .sp2 {
+        grid-area: sp2;
+    }
+    .sp3 {
+        grid-area: sp3;
+    }
+    .sp4 {
+        grid-area: sp4;
+    }
+    .sp5 {
+        grid-area: sp5;
+    }
+    .left-padd {
+        padding: 1%;
+    }
+}
