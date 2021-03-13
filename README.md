@@ -16,7 +16,7 @@ Uboric is an e-commerce platform where user can find different kind of utility p
 Worked on Javascript functionality and data support of products pages.
 
 
-# Ashish Saini -
+# Ashish Kumar Saini -
 Worked on products category pages such as spices, footwear etc. Worked product display page and cart page and their functionality.
 
 
