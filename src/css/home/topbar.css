@@ -1,3 +1,5 @@
+@import "./hamburger.css";
+
 :root {
   --gradient: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.02), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
@@ -216,4 +218,23 @@ input::placeholder {
   border-radius: var(--round-radius);
   background-color: var(--button-background);
   font-size: 21px;
+}
+
+.hamburger-nav-bar {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nav-bar,
+  .top-nav {
+    display: none;
+  }
+
+  /* .top-nav {
+    d
+  } */
+
+  .hamburger-nav-bar {
+    display: flex;
+  }
 }

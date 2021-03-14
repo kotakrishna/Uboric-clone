@@ -124,3 +124,8 @@ signin.addEventListener("mouseleave", (e) => {
   signToggle = false;
   togglesignMenu(signToggle);
 });
+
+// Toggle hamburger Menu
+const hamburgerBtn = document.querySelector(".fa-bars");
+
+
