@@ -7,7 +7,7 @@ to open the project click here #https://kotakrishna.github.io/Uboric-clone/
 1. Font awesome
 2. Animate.css
 
-Uboric is an e-commerce platform where user can find different kind of utility products from various categories. User can add as many as products cart and place the order.
+Uboric is an e-commerce platform where users can find different kinds of utility products from various categories. Users can add as many as products cart and place the order.
 
 
 # Team Mahananda- Kota Sai krishna, Ashish Kumar saini, Jayesh, Deepak Makkar.
